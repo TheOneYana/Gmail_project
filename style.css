@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+.header {
+    background-color: aliceblue;
+    height: 65px;
+
+}
+.gmail-logo{
+    height: 80%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.centerpiece{
+    display: flex;
+    flex-direction: column;
+    align-items:initial;
+    width: 100%;
+}
+.pagenation{
+    background-color: rgb(244, 81, 178);
+    height: 50px;
+}
+.p-s-p {
+    background-color:rgb(228, 238, 119);
+    height: 50px;
+}
+.emails{
+    overflow: auto;
+}
+.email{
+    background-color: gray;
+    height: 40px;
+}
+.left-side-menu{
+    background-color: bisque;
+    width: 260px;
+    height: 94.5vh;
+}
+
+.right-side-menu {
+    background-color: rgb(60, 63, 110);
+    width: 60px;
+    height: 94.5vh;
+
+  
+}
