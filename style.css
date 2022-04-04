@@ -37,7 +37,32 @@ main {
 .p-s-p {
     background-color: rgb(128, 128, 128, 0.5);
     height: 50px;
+    display: flex;
 }
+.p-s-p section {
+   background-color: none;
+   border: none;
+   width: 200px;
+   text-align: left;
+   color: white;
+   font-size: 14px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.p_s_p_icon {
+    margin-left: 18px;
+    height: 23px;
+}
+.p_s_p_text {
+    margin-left: 15px;
+    
+}
+.p_s_p_icons {
+    height: 17px;
+}
+
+
 .emails{
     overflow: auto;
 }
@@ -58,3 +83,14 @@ main {
 
   
 }
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: none;
+    border: 2px solid rgb(178, 176, 176);
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
