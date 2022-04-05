@@ -257,10 +257,7 @@ fill:#fff;
 .emails{
     overflow: auto;
 }
-.email{
-    background-color: rgb(128, 128, 128, 0.5);
-    height: 40px;
-}
+
 .left-side-menu{
     background-color: bisque;
     width: 260px;
@@ -283,7 +280,7 @@ input[type="checkbox"] {
     border: 2px solid rgb(178, 176, 176);
     border-radius: 2.5px;
     cursor: pointer;
-    margin-left: 20px;
+  
   }
   input[type="checkbox"]:hover {
     appearance: none;
@@ -296,3 +293,47 @@ input[type="checkbox"] {
     cursor: pointer;
     margin-left: 20px;
   }
+
+  .email{
+    background-color: rgb(128, 128, 128, 0.5);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+
+}
+.checkBoxHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat;
+    border-radius: 50%; */
+    margin-left: 10px;
+}
+.starHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat;
+    border-radius: 50%; */
+  
+}
+.importantHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat;
+    border-radius: 50%; */
+    margin-right: 8px;
+  
+    
+}
+.sender{
+    width: 200px;
+}
