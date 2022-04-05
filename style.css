@@ -215,6 +215,9 @@ fill:#fff;
     width: 18px;
     margin: 0 10px;
 }
+.arrow_left{
+    fill:rgb(178, 176, 176);
+}
 .input_tools{
     width: 20px;
 }
