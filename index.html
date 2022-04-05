@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:display=swap" rel="stylesheet">
     <title>Gmail</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="header">
-            <button class="main-menu"></button>
-            <img class ='gmail-logo' src="Gmail logo from Header.png" alt="M Gmail logo">
-            <input type="text" class="search" placeholder="Search mail">
-            <button class="support"></button>
-            <button class="settings"></button>
-            <button class="google-apps"></button>
-            <button class="google-account"></button>
-        </div>
-        <div class="container">
+      <div class="header">
+        <button class="main-menu"></button>
+        <img
+          class="gmail-logo"
+          src="Gmail logo from Header.png"
+          alt="M Gmail logo"
+        />
+        <input type="text" class="search" placeholder="Search mail" />
+        <button class="support"></button>
+        <button class="settings"></button>
+        <button class="google-apps"></button>
+        <button class="google-account"></button>
+      </div>
+      <div class="container">
         <section class="left-side-menu">
-            <button>Compose</button>
+          <button>Compose</button>
         </section>
         <section class="centerpiece">
-            <div class="pagenation">
-             <div class="left">
-             <div class="selectAll"> <input id="checkbox" type="checkbox"> <span class="tooltiptext">Select</span> <img class = 'arrow_drop_down' src="./arrow_drop_down.png" alt="arrow_drop_down"> </div> <div class="refreshContainer"> <img class="refresh" src="./refresh.png" alt="refresh"> <span class="tooltiptext">Refresh</span> </div> <img class="more" src="./more.png" alt="more"></div> <div class="right"> <section class="pagenation">1-50 of 2218</section> <img class="arrow_left" src="./arrow_left.png" alt="arrow_left"> <img class="arrow_right" src="./arrow_right.png" alt="arrow_right"> <img class="input_tools" src="./input_tools.png" alt="input_tools"> <img class = 'arrow_drop_down_right' src="./arrow_drop_down.png" alt="arrow_drop_down"> </div> </div>
-            <div class="p-s-p">
-                <section class="primary"> <img class="p_s_p_icon" src="./inbox.png" alt="inbox"> <p class="p_s_p_text">Primary</p> </section>
-                <section class="social"> <img class="p_s_p_icons" src="./social.png" alt="social"> <p class="p_s_p_text">Social </p></section>
-                <section class="promotions"> <img class="p_s_p_icons" src="./promotions.png" alt="promotions"> <p class="p_s_p_text">Promotions</p> </section>
+          <div class="pagenation">
+            <div class="left">
+              <div class="selectAll">
+                  <div class="checkboxHover">
+                <input id="checkbox" type="checkbox" />
             </div>
-            <section class="emails"> <!--all emails go in here-->
-                <div class="email">
-                    <input class = 'email-line checkbox' type="checkbox">
-                </div>
+                <span class="tooltiptext">Select</span>
+                <div class="arrowHover">
+                <svg
+                  class="arrow_drop_down" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 10l5 5 5-5z"
+                  alt="arrow_drop_down"/></svg>
+            </div>
+              </div>
+              <div class="refreshContainer">
+                <svg class="refresh" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" alt="refresh"/></svg> 
+                <span class="tooltiptext">Refresh</span>
+              </div>
+              <div class="moreHover">
+              <svg class="more" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" alt="more" /></svg> 
+              <span class="tooltiptext">More</span>
+            </div>
+           
+            </div>
+            <div class="right">
+              <section class="pagenation">1-50 of 2218</section>
+              <img class="arrow_left" src="./arrow_left.png" alt="arrow_left" />
+              <img
+                class="arrow_right"
+                src="./arrow_right.png"
+                alt="arrow_right"
+              />
+              <img
+                class="input_tools"
+                src="./input_tools.png"
+                alt="input_tools"
+              />
+              <svg
+                  class="arrow_drop_down" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 10l5 5 5-5z"
+                  alt="arrow_drop_down"/></svg>
+            </div>
+          </div>
+          <div class="p-s-p">
+            <section class="primary">
+              <img class="p_s_p_icon" src="./inbox.png" alt="inbox" />
+              <p class="p_s_p_text">Primary</p>
             </section>
+            <section class="social">
+              <img class="p_s_p_icons" src="./social.png" alt="social" />
+              <p class="p_s_p_text">Social</p>
+            </section>
+            <section class="promotions">
+              <img
+                class="p_s_p_icons"
+                src="./promotions.png"
+                alt="promotions"
+              />
+              <p class="p_s_p_text">Promotions</p>
+            </section>
+          </div>
+          <section class="emails">
+            <!--all emails go in here-->
+            <div class="email">
+              <input class="email-line checkbox" type="checkbox" />
+            </div>
+          </section>
         </section>
         <section class="right-side-menu">
-            <button>Calendar</button>
+          <button>Calendar</button>
         </section>
-    </div>
-
+      </div>
     </main>
 
-    <script type = 'module' src="script.js"></script>
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>

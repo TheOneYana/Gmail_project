@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+   
 }
 
 main {
@@ -39,6 +41,7 @@ main {
     color: white;
     font-size: 13px;
 }
+
 .left{
     display: flex;
     align-items: center;
@@ -75,29 +78,69 @@ main {
     border: -5px solid gray;
     
 }
-
   
 #checkbox {
-    margin-left: 6px;
+    margin-left: 2px;
     margin-right: 1px;
 }
 .selectAll:hover .tooltiptext {
     visibility: visible;
   }
+.checkboxHover{
+    width: 29px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+ 
+}
+.checkboxHover:hover{
+    border: 1px solid rgba(108, 107, 107, 0.5);
+    background-color: rgba(108, 107, 107, 0.5);
+}
+.checkboxHover:hover input{
+    border: 2px solid rgb(253, 251, 251);
+} 
+
+.arrowHover{
+    width: 19px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.arrowHover:hover{
+    border: 1px solid rgba(108, 107, 107, 0.5);
+    background-color: rgba(108, 107, 107, 0.5);
+}
+
 .arrow_drop_down{
     height: 20px;
     margin-top: -2px;
+    fill: rgba(231, 228, 228, 0.807);
 }
+.arrow_drop_down:hover{
+    fill: rgb(250, 249, 249);
+}
+.arrowHover:hover svg{
+    fill:#fff;
+    }
 .refreshContainer{
-    width: 40px;
-    height: 25px;
-
-
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
     
 }
 .refreshContainer:hover{
-    border: 1px solid wheat;
-    border-radius: 70%;
+    border: 1px solid rgba(108, 107, 107, 0.5);
+    border-radius: 50%;
+    background-color: rgba(97, 97, 97, 0.5);
+    
 }
 .refreshContainer .tooltiptext {
     visibility: hidden;
@@ -110,20 +153,64 @@ main {
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    margin-top: 30px;
-    margin-left: -25px;
+    margin-top: 60px;
+    margin-left: 5px;
   }
   .refreshContainer:hover .tooltiptext {
     visibility: visible;
   }
 .refresh{
     height: 21px;
-    margin-left: 9px;
+    fill: rgba(231, 228, 228, 0.807);
+   
 }
+.refresh:hover{
+    fill: rgb(250, 249, 249);
+}
+.refreshContainer:hover svg{
+    fill:#fff;
+    }
 .more {
     height: 20px;
-    margin-left: 12px;
+    fill: rgba(231, 228, 228, 0.807);
 }
+.more:hover{
+    fill: rgb(250, 249, 249);
+}
+.moreHover:hover svg{
+fill:#fff;
+
+}
+.moreHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+}
+.moreHover:hover{
+    border: 1px solid rgba(108, 107, 107, 0.5);
+    border-radius: 50%;
+    background-color: rgba(97, 97, 97, 0.5);
+}
+.moreHover .tooltiptext {
+    visibility: hidden;
+    width: 55px;
+    height: 20px;
+    background-color: rgb(91, 90, 90);
+    color: #fff;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    margin-left: 5px;
+  }
+  .moreHover:hover .tooltiptext {
+    visibility: visible;
+  }
 .arrow_left, .arrow_right {
     width: 18px;
     margin: 0 10px;
@@ -149,6 +236,7 @@ main {
    display: flex;
    flex-direction: row;
    align-items: center;
+   font-weight: 400;
 }
 .p_s_p_icon {
     margin-left: 18px;
@@ -190,6 +278,17 @@ input[type="checkbox"] {
     height: 18px;
     background-color: none;
     border: 2px solid rgb(178, 176, 176);
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  input[type="checkbox"]:hover {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: none;
+    border: 2px solid rgb(253, 251, 251);
     border-radius: 2.5px;
     cursor: pointer;
     margin-left: 20px;
