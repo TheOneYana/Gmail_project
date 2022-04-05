@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position:fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;  
+}
+
+.header-left img{
+    position: fixed;
+    top:22px;
+    left: 50px;
+    width: 80px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex: 0.25;
+    width: 260px;
+}
+
+.header-left span {
+    position: fixed;
+    top: 20px;
+    left: 13px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.header-middle {
+    position: fixed;
+    top: 10px;
+    left: 265px;
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 5px;
+    height: 8%;
+    width: 40%;
+    z-index: 15;
+}
+
+.search-change {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+.header-middle input{
+    width: 100%;
+    height: 30px;
+    border:none;
+    padding: 10px;
+    background-color:transparent;
+    font-size: small;
+    outline: none;
+}
+
+.material-icons {
+    cursor: pointer;
+    color: grey;
+    padding: 5px;
+}
+
+.header-right {
+    position: fixed;
+    top: 22px;
+    right: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+/* By default show sidebar links */
+.sidebar-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 265px;
+    height: auto;
+    line-height: 1.5;
+    transition: all 0.5s ease-out;
+    transform: translate(0);
+}
+
+/* Toggle sidebar class */
+.hide-sidebar {
+    transform: translate(-85%);
+}
+
+/* By default hide support links */
+.support-links {
+    height: 0;
+    display: none;
+}
+
+/* Toggle support class */
+.show-support {
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    width: 20%;
+    height: 28%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    border: 1px solid #e6e0e0; 
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+} 
+
+a#support, a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+div.feedback {
+    border-top: 1px solid #e6e0e0;
+    padding-top: 3px;
+}
+
+li.support-li:hover, a:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+ul.support-links{
+    padding-left:5px;
+}
+
+.material-icons:hover {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+img#profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+span#camera {
+    position: absolute;
+    top: 50px;
+    right: 38px;
+    margin-top: 10px;
+    z-index: 3;
+}
+
+.account-info {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    width: 28%;
+    height: 60%;
+    border: 1px solid #e6e0e0;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 0.7rem; 
+    background-color: white;
+    z-index: 2;
+}
+
+/* Toggle account info */
+.hide-account-info {
+    height: 0;
+    display: none;
+}
+
+a#manage-account {
+    border: 1px solid #e6e0e0;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+div.another-account {
+    border: 1px solid #e6e0e0;
+    border-left:none;
+    border-right: none;
+    padding: 10px;
+}
+
+div.another-account:hover {
+    background-color: whitesmoke;
+}
+
+button[type="submit"].sign-out {
+    font-size: 0.7rem;
+    background-color: transparent;
+    border: 1px solid #e6e0e0;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+button[type="submit"].sign-out:hover {
+    background-color: #e6e0e0;
+    cursor: pointer;
+}
+
+.account-footer {
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-top: 1px solid #e6e0e0;
+}
+
+ div.google-apps {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    width: 30%;
+    height: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    font-size: 0.7rem;
+    border: 1px solid #e6e0e0; 
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+    padding-left: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.hide-apps {
+    height: 0;
+    display: none;
+}
+
+ul.apps {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.2rem;  
+    justify-content: center;
+}
+
+ul.apps li:hover {
+    background-color: whitesmoke;
+}
+
+ul.draw-line {
+    border-top: 1px solid #e6e0e0;
+    padding-top: 10px;
+}
+
+a#more-apps {
+    border: 1px solid #e6e0e0;
+    color: rgb(63, 131, 233);
+    padding: 5px;
+}
+
+div.more-apps {
+    margin-bottom: 10px;
+}
+
+.email-list {
+    position: absolute;
+    top: 70px;
+    left: 265px;
+    line-height: 1.2;
+    overflow-y: scroll;
+    width:100%;
+    text-align: left;
+}
+div.sender, div.message, div.date {
+    display: inline-block;
+}
+
+div.sender {
+    width: 15%;
+}
+div.message {
+    width: 30%;
+}
+div.date {
+    width: 20%;
+}
