@@ -24,6 +24,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+   
 }
 .centerpiece{
     display: flex;
@@ -40,11 +42,13 @@ main {
     justify-content: space-between;  
     color: white;
     font-size: 13px;
+    padding-right: 15px;
 }
 
 .left{
     display: flex;
     align-items: center;
+    
 
 }
 .right{
@@ -220,6 +224,7 @@ fill:#fff;
 }
 .input_tools{
     width: 20px;
+    margin-left: 8px;
 }
 .arrow_drop_down_right{
     margin-right: 3px;
@@ -232,7 +237,7 @@ fill:#fff;
 .p-s-p section {
    background-color: none;
    border: none;
-   width: 200px;
+   width: 271px;
    text-align: left;
    color: white;
    font-size: 14px;
@@ -300,6 +305,10 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content:left;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    
 
 }
 .checkBoxHover{
@@ -310,7 +319,7 @@ input[type="checkbox"] {
     align-items: center;
     /* border: 1px solid wheat;
     border-radius: 50%; */
-    margin-left: 10px;
+    margin-left: -11px;
 }
 .starHover{
     width: 35px;
@@ -320,6 +329,7 @@ input[type="checkbox"] {
     align-items: center;
     /* border: 1px solid wheat;
     border-radius: 50%; */
+    margin-left: -7px;
   
 }
 .importantHover{
@@ -331,12 +341,31 @@ input[type="checkbox"] {
     /* border: 1px solid wheat;
     border-radius: 50%; */
     margin-right: 8px;
+    margin-left: -7px;
   
     
 }
 .sender{
     width: 200px;
 }
-.time{
-    width: 40px;
+.subject{
+    width: 545px;
 }
+.time{
+    width: 60px;
+    margin-left: 25px;
+  
+}
+.drag{
+    margin: 0;
+    visibility: hidden;
+    fill: rgba(231, 228, 228, 0.807)
+}
+.email:hover .drag{
+    visibility: visible;
+}
+.emailContent{
+    font-weight: 400;
+    color: rgb(190, 190, 190);
+}
+/* rgba(231, 228, 228, 0.807) */
