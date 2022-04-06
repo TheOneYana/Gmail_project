@@ -370,6 +370,7 @@ input[type="checkbox"] {
 .time{
     width: 60px;
     margin-left: 40px;
+    font-size: 13px;
   
 }
 .drag{
