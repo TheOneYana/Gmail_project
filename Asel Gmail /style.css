@@ -11,6 +11,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 65px;
+    width: 100vw;
     border-bottom: 1px solid whitesmoke;
     background-color: white;  
 }
@@ -42,7 +43,7 @@ header{
 
 .header-middle {
     position: fixed;
-    top: 10px;
+    top: 11px;
     left: 265px;
     display: flex;
     flex: 0.7;
