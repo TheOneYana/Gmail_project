@@ -355,13 +355,16 @@ input[type="checkbox"] {
 }
 
 .sender{
-    width: 200px;
+    width: 150px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-right: 40px;
 }
 .subject{
-width: 545px;
+ width: 545px;
  white-space: nowrap;
- 
  overflow-x: hidden;
+ margin-left: 10px;
 
 }
 .time{
