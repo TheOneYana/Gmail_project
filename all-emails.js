@@ -1,10 +1,10 @@
 // const primary = require('./primary');
 // const social = require('./social');
 // const promotions = require('./promotions');
-import { primary } from './primary';
-import { promotions } from './promotions';
-import { social } from './social';
+import { primary } from './primary.js';
+import { promotions } from './promotions.js';
+import { social } from './social.js';
 
-const allInbox = [...primary, ...social, ...promotions];
+export const allInbox = [...primary, ...social, ...promotions];
 
-module.exports = { primary, social, promotions, allInbox };
+// module.exports = { primary, social, promotions, allInbox };
