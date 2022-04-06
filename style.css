@@ -7,7 +7,7 @@
 /* Uliana's CSS starts */
 
 main {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100vw;
     height: 100vh;
     margin: auto;
@@ -34,6 +34,8 @@ main {
     align-items:initial;
     width: 100%;
     background-color: rgb(128, 128, 128, 0.5);
+   
+    
 }
 .pagenation{
     background-color: none;
@@ -265,6 +267,22 @@ fill:#fff;
 .centerpiece{
     height: 100vh;
     overflow: scroll;
+    height: 94.5vh;
+   
+}
+footer{
+    height: 65px;
+    background-color: black;     
+   color: white;
+   text-align: center;
+   padding-top: 12px;
+   font-size: 13px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;    
+   
 }
 
 .left-side-menu{
@@ -313,6 +331,7 @@ input[type="checkbox"] {
     font-size: 15px;
     font-weight: 500;
     border: 1px solid grey;
+    
 
 }
 .checkBoxHover{
@@ -352,6 +371,7 @@ input[type="checkbox"] {
 .email-list{
     margin: 0;
     padding: 0;
+
 }
 
 .sender{
