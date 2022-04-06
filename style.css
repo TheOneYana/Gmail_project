@@ -233,6 +233,8 @@ fill:#fff;
     background-color: rgb(128, 128, 128, 0.5);
     height: 50px;
     display: flex;
+    border-bottom: 2px solid gray;
+    box-shadow: 0 2px 4px #262626 
 }
 .p-s-p section {
    background-color: none;
