@@ -5,6 +5,7 @@
    
 }
 /* Uliana's CSS starts */
+
 main {
     background-color: black;
     width: 100vw;
@@ -261,8 +262,9 @@ fill:#fff;
 }
 
 
-.emails{
-    overflow: auto;
+.centerpiece{
+    height: 100vh;
+    overflow: scroll;
 }
 
 .left-side-menu{
@@ -303,14 +305,14 @@ input[type="checkbox"] {
 
   .email{
     background-color: rgb(128, 128, 128, 0.5);
-    height: 40px;
+    height: 37.5px;
     display: flex;
     align-items: center;
     justify-content:left;
     color: white;
     font-size: 15px;
     font-weight: 500;
-    
+    border: 1px solid grey;
 
 }
 .checkBoxHover{
@@ -347,15 +349,24 @@ input[type="checkbox"] {
   
     
 }
+.email-list{
+    margin: 0;
+    padding: 0;
+}
+
 .sender{
     width: 200px;
 }
 .subject{
-    width: 545px;
+width: 545px;
+ white-space: nowrap;
+ 
+ overflow-x: hidden;
+
 }
 .time{
     width: 60px;
-    margin-left: 25px;
+    margin-left: 40px;
   
 }
 .drag{
