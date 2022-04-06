@@ -1,312 +1,285 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Font Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Gmail UI Clone</title>
-</head>
-<body>
-  <div class="main-container">
-  <!-- Header Starts -->
-  <header class="header-container">
-    <div class="header-left">
-      <span id="menu-toggle" class="material-icons">
-                      menu
-      </span>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gmail2020.logo.png" alt="gmail logo">
-    </div>
-    <div class="header-middle">
-      <span class="material-icons">
-                      search
-      </span>
-      <input type="search" id="search" placeholder="Search mail">
-      <span class="material-icons">
-                      tune
-      </span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT links start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FONT links ended -->
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Gmail</title>
+  </head>
+  <body>
+    <main>
+      <!-- ASELS's section starts -->
+      <header class="header-container">
+        <div class="header-left">
+            <span id="menu-toggle" class="material-icons">
+                menu
+            </span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gmail2020.logo.png" alt="gmail logo">
+        </div>
+        <div class="header-middle">
+            <span class="material-icons">
+                search
+            </span>
+            <input type="search" id="search" placeholder="Search mail">
+            <span class="material-icons">
+                tune
+            </span>
         </div>
         <div class="header-right">
-          <span id="support-icon" class="material-icons">
-                      help_outline
-          </span>
-          <span class="material-icons">
-                      settings
-          </span>
-          <span id="apps-icon" class="material-icons">
-                      apps
-          </span>
-          <span id="profile-icon" class="material-icons">
-                      account_circle
-          </span>
+            <span id="support-icon" class="material-icons">
+                help_outline
+            </span>
+            <span class="material-icons">
+                settings
+            </span>
+            <span id="apps-icon" class="material-icons">
+                apps
+            </span>
+            <span id="profile-icon" class="material-icons">
+                account_circle
+            </span>
         </div>
         <!-- Support Links -->
         <ul class="support-links">
-          <li class="support-li">
-                      <a id="support" href="https://support.google.com/mail/?hl=en#topic=7065107" target="_blank">Help</a>
-          </li>
-          <li class="support-li">
-                      <a id="support" href="https://support.google.com/a/users/answer/9259748?p=gmail_training&visit_id=1648830108947-7057445523959496416&rd=1" target="_blank">Training</a>
-          </li>
-          <li class="support-li">
-                      <a id="support" href="https://support.google.com/mail/answer/9238280?hl=en#null" target="_blank">Updates</a>
-          </li>
-          <div class="feedback">
-          <li class="support-li">
-                      <a id="support" href="https://support.google.com/mail/answer/9212652?hl=en&ref_topic=7065107" target="_blank">Send feedback to Google</a>
-              </li>
-              </div>
-          </ul>
-      
-      <!-- Google Apps -->
-      <div class="google-apps hide-apps">
-          <br>
-      <ul class="apps">
-          <li>
-              <a href="https://www.google.com/webhp?tab=mw" target="_blank">
-                <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
-                <p>Search</p>
-              </a>
-          </li>
-          <li>
-              <a href="https://www.google.com/maps/@52.469397,5.509644,8z?hl=en" target="_blank">
-                  <img src="https://img.icons8.com/fluency/48/000000/google-maps-new.png"/>
-                  <p>Maps</p>
-              </a>
-          </li>
-          <li>
-              <a href="https://www.youtube.com/" target="_blank">
-              <img src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-youtube-multimedia-prettycons-flat-prettycons.png"/>
-              <p>YouTube</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://play.google.com/store/apps?hl=en&tab=m8" target="_blank">
-                  <img src="https://img.icons8.com/fluency/48/000000/google-play.png"/>
-                  <p>Play</p>
-              </a>
-          </li>
-          <li>
-              <a href="https://mail.google.com/mail/u/0/?tab=mm#inbox" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/gmail-new.png"/>
-              <p>Gmail</p>
-          </a>
-      </li>
-          <li><a href="https://meet.google.com/?hs=197&pli=1&authuser=0" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-meet.png"/>
-              <p>Meet</p>
-          </a></li>
-          <li><a href="https://mail.google.com/chat/u/0/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/chat--v1.png"/>
-              <p>Chat</p>
-          </a></li>
-          <li>
-              <a href="https://contacts.google.com/?hl=en&tab=mC" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-contacts.png"/>
-              <p>Contacts</p>
-          </a>
-      </li>
-          <li><a href="https://drive.google.com/drive/my-drive" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-drive--v2.png"/>
-              <p>Drive</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://calendar.google.com/calendar/u/0/r?tab=mc" target="_blank">
-              <img src="https://img.icons8.com/fluency/48/000000/google-calendar--v2.png"/>
-              <p>Calender</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://translate.google.com/?hl=en&tab=mT" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-translate.png"/>
-              <p>Translate</p>
-          </a>
-      </li>
-          <li><a href="https://photos.google.com/?tab=mq&pageId=none&pli=1" target="_blank">
-              <img src="https://img.icons8.com/fluency/48/000000/google-photos-new.png"/>
-              <p>Photos</p>
-          </a></li>
-          <li>
-              <a href="https://duo.google.com/?usp=duo_ald" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-duo.png"/>
-              <p>Duo</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://www.google.com/shopping?hl=en" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-shopping.png"/>
-              <p>Shopping</p>
-          </a>
-      </li>
-      </ul>
-      <br>
-      
-      <ul class="apps draw-line">
-          <li>
-              <a href="https://news.google.com/topstories?tab=mn&hl=en-US&gl=US&ceid=US:en" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-news.png"/>
-              <p>News</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://docs.google.com/document/u/0/?usp=docs_alc" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-docs--v1.png"/>
-              <p>Docs</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://docs.google.com/spreadsheets/u/0/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-sheets.png"/>
-              <p>Sheets</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://docs.google.com/presentation/u/0/" target="_blank">
-              <img src="https://img.icons8.com/fluency/48/000000/google-slides.png"/>
-              Slides
-          </a>
-      </li>
-          <li>
-              <a href="https://books.google.com/?hl=en&tab=mp" target="_blank">
-              <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-books-lifestyles-flaticons-flat-flat-icons-2.png"/>
-              <p>Books</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://www.blogger.com/about/?tab=mj&bpli=1" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/blogger.png"/>
-              <p>Blogger</p>
-          </a>
-      </li>
-          <li>
-            <a href="https://hangouts.google.com/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/hangout.png"/>
-              <p>Hangouts</p>
-          </a>
-        </li>
-          <li>
-              <a href="https://keep.google.com/u/0/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-keep.png"/>
-              <p>Keeps</p>
-          </a>
-      </li>
-          <li>
-            <a href="https://jamboard.google.com/u/0/" target="_blank">
-              <img src="https://img.icons8.com/fluency/48/000000/jamboard.png"/>
-              <p>Jamboard</p>
-          </a>
-        </li>
-          <li><a href="https://classroom.google.com/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-classroom.png"/>
-              <p>Classroom</p>
-          </a></li>
-          <li>
-              <a href="https://earth.google.com/web/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-earth--v1.png"/>
-              <p>Earth</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://ads.google.com/home/?subid=ww-ww-et-g-aw-a-vasquette_ads_cons_1!o2" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-ads.png"/>
-              <p>Ads</p>
-          </a>
-      </li>
-          <li>
-              <a href="https://podcasts.google.com/" target="_blank">
-              <img src="https://img.icons8.com/color/48/000000/google-podcasts.png"/>
-              <p>Podcasts</p>
-          </a>
-      </li>
-      <li>
-          <a href="https://one.google.com/about" target="_blank">
-          <img src="https://img.icons8.com/bubbles/50/000000/google-one.png"/>
-          <p>One</p>
-      </a>
-      </li>
-      <li>
-          <a href="https://docs.google.com/forms/u/0/" target="_blank">
-          <img src="https://img.icons8.com/color/48/000000/google-forms.png"/>
-          <p>Forms</p>
-      </a>
-      </li>
-      
-      </ul>
-      <br><br>
-      <div class="more-apps">
-          <a id="more-apps" href="https://about.google/products/?tab=mh" target="_blank">More from Google</a> 
-      </div>
-      <br>
-      </div>
-      <!-- Account Info -->
-      <div class="account-info hide-account-info">
-          <div class="top-section">
-              <img id="profile-img" src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile photo">
-              <span id="camera" class="material-icons">
-                  photo_camera
-                  </span>
-              <p><strong>Asel Williams</strong></p>
-              <p>aselwilliams@gmail.com</p>
-              <br>
-              <a id="manage-account" href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act">Manage your Google Account</a>
-          </div>
-          <div class="another-account">
-              <span class="material-icons md-18">
-                  person_add_alt
-                  </span>
-              <a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank">Add another account</a>
-          </div>
-          <div class="sign-out">
-              <button type= "submit" class="sign-out">Sign Out</button>
-          </div>
-          <div class="account-footer">
-              <a href="https://policies.google.com/privacy?hl=en">Privacy Policy</a>
-              <a href="https://policies.google.com/terms?hl=en">Terms of Service</a>
-          </div>
-      </div>      
-      </header>
-      </div>
-          <!-- Header Ends -->
-          <!-- Sidebar Starts -->
-          <ul class="sidebar-links">
-              <button class="compose">Compose</button>
-              <li>Inbox Text is intended to test something</li>
-              <li>Starred</li>
-              <li>Snoozed</li>
-              <li>Sent</li>
-              <li>Drafts</li>
-          </ul>
-          <!-- Sidebar Ends -->
-          <!-- Main emails section Starts-->
-          <ul class="email-list">
-              <!-- <li class="email-item">
-                  <input type="checkbox" name="check-id" id="1">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-arrow-right"></i>
-                  <div class="sender">
-                  <span class="email-sender"></span>
-                  </div>
-                  <div class="message">
-                  <span class="email-message"></span>
-                  </div>
-                  <div class="date">
-                  <span class="email-date"></span>
-                  </div>
-              </li> -->
-          </ul>
-          <!-- Main emails section Ends -->
-      
+            <li class="support-li">
+                <a id="support" href="https://support.google.com/mail/?hl=en#topic=7065107" target="_blank">Help</a>
+            </li>
+            <li class="support-li">
+                <a id="support" href="https://support.google.com/a/users/answer/9259748?p=gmail_training&visit_id=1648830108947-7057445523959496416&rd=1" target="_blank">Training</a>
+            </li>
+            <li class="support-li">
+                <a id="support" href="https://support.google.com/mail/answer/9238280?hl=en#null" target="_blank">Updates</a>
+            </li>
+            <div class="feedback">
+            <li class="support-li">
+                <a id="support" href="https://support.google.com/mail/answer/9212652?hl=en&ref_topic=7065107" target="_blank">Send feedback to Google</a>
+            </li>
+            </div>
+        </ul>
+
+<!-- Google Apps -->
+<div class="google-apps hide-apps">
+    <br>
+<ul class="apps">
+    <li>
+        <a href="https://www.google.com/webhp?tab=mw" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+            <p>Search</p>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.google.com/maps/@52.469397,5.509644,8z?hl=en" target="_blank">
+            <img src="https://img.icons8.com/fluency/48/000000/google-maps-new.png"/>
+            <p>Maps</p>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/" target="_blank">
+        <img src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-youtube-multimedia-prettycons-flat-prettycons.png"/>
+        <p>YouTube</p>
+    </a>
+</li>
+    <li>
+        <a href="https://play.google.com/store/apps?hl=en&tab=m8" target="_blank">
+            <img src="https://img.icons8.com/fluency/48/000000/google-play.png"/>
+            <p>Play</p>
+        </a>
+    </li>
+    <li>
+        <a href="https://mail.google.com/mail/u/0/?tab=mm#inbox" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/gmail-new.png"/>
+        <p>Gmail</p>
+    </a>
+</li>
+    <li><a href="https://meet.google.com/?hs=197&pli=1&authuser=0" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-meet.png"/>
+        <p>Meet</p>
+    </a></li>
+    <li><a href="https://mail.google.com/chat/u/0/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/chat--v1.png"/>
+        <p>Chat</p>
+    </a></li>
+    <li>
+        <a href="https://contacts.google.com/?hl=en&tab=mC" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-contacts.png"/>
+        <p>Contacts</p>
+    </a>
+</li>
+    <li><a href="https://drive.google.com/drive/my-drive" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-drive--v2.png"/>
+        <p>Drive</p>
+    </a>
+</li>
+    <li>
+        <a href="https://calendar.google.com/calendar/u/0/r?tab=mc" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/000000/google-calendar--v2.png"/>
+        <p>Calender</p>
+    </a>
+</li>
+    <li>
+        <a href="https://translate.google.com/?hl=en&tab=mT" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-translate.png"/>
+        <p>Translate</p>
+    </a>
+</li>
+    <li><a href="https://photos.google.com/?tab=mq&pageId=none&pli=1" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/000000/google-photos-new.png"/>
+        <p>Photos</p>
+    </a></li>
+    <li>
+        <a href="https://duo.google.com/?usp=duo_ald" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-duo.png"/>
+        <p>Duo</p>
+    </a>
+</li>
+    <li>
+        <a href="https://www.google.com/shopping?hl=en" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-shopping.png"/>
+        <p>Shopping</p>
+    </a>
+</li>
+</ul>
+<br>
+
+<ul class="apps draw-line">
+    <li>
+        <a href="https://news.google.com/topstories?tab=mn&hl=en-US&gl=US&ceid=US:en" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-news.png"/>
+        <p>News</p>
+    </a>
+</li>
+    <li>
+        <a href="https://docs.google.com/document/u/0/?usp=docs_alc" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-docs--v1.png"/>
+        <p>Docs</p>
+    </a>
+</li>
+    <li>
+        <a href="https://docs.google.com/spreadsheets/u/0/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-sheets.png"/>
+        <p>Sheets</p>
+    </a>
+</li>
+    <li>
+        <a href="https://docs.google.com/presentation/u/0/" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/000000/google-slides.png"/>
+        Slides
+    </a>
+</li>
+    <li>
+        <a href="https://books.google.com/?hl=en&tab=mp" target="_blank">
+        <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-books-lifestyles-flaticons-flat-flat-icons-2.png"/>
+        <p>Books</p>
+    </a>
+</li>
+    <li>
+        <a href="https://www.blogger.com/about/?tab=mj&bpli=1" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/blogger.png"/>
+        <p>Blogger</p>
+    </a>
+</li>
+    <li><a href="https://hangouts.google.com/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/hangout.png"/>
+        <p>Hangouts</p>
+    </a></li>
+    <li>
+        <a href="https://keep.google.com/u/0/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-keep.png"/>
+        <p>Keeps</p>
+    </a>
+</li>
+    <li><a href="https://jamboard.google.com/u/0/" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/000000/jamboard.png"/>
+        <p>Jamboard</p>
+    </a></li>
+    <li><a href="https://classroom.google.com/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-classroom.png"/>
+        <p>Classroom</p>
+    </a></li>
+    <li>
+        <a href="https://earth.google.com/web/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-earth--v1.png"/>
+        <p>Earth</p>
+    </a>
+</li>
+    <li>
+        <a href="https://ads.google.com/home/?subid=ww-ww-et-g-aw-a-vasquette_ads_cons_1!o2" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-ads.png"/>
+        <p>Ads</p>
+    </a>
+</li>
+    <li>
+        <a href="https://podcasts.google.com/" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/google-podcasts.png"/>
+        <p>Podcasts</p>
+    </a>
+</li>
+<li>
+    <a href="https://one.google.com/about" target="_blank">
+    <img src="https://img.icons8.com/bubbles/50/000000/google-one.png"/>
+    <p>One</p>
+</a>
+</li>
+<li>
+    <a href="https://docs.google.com/forms/u/0/" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/google-forms.png"/>
+    <p>Forms</p>
+</a>
+</li>
+
+</ul>
+<br><br>
+<div class="more-apps">
+    <a id="more-apps" href="https://about.google/products/?tab=mh" target="_blank">More from Google</a> 
+</div>
+<br>
+</div>
+<!-- Account Info -->
+<div class="account-info hide-account-info">
+    <div class="top-section">
+        <img id="profile-img" src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile photo">
+        <span id="camera" class="material-icons">
+            photo_camera
+            </span>
+        <p><strong>Asel Williams</strong></p>
+        <p>aselwilliams@gmail.com</p>
+        <br>
+        <a id="manage-account" href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act">Manage your Google Account</a>
+    </div>
+    <div class="another-account">
+        <span class="material-icons md-18">
+            person_add_alt
+            </span>
+        <a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank">Add another account</a>
+    </div>
+    <div class="sign-out">
+        <button type= "submit" class="sign-out">Sign Out</button>
+    </div>
+    <div class="account-footer">
+        <a href="https://policies.google.com/privacy?hl=en">Privacy Policy</a>
+        <a href="https://policies.google.com/terms?hl=en">Terms of Service</a>
+    </div>
+</div>      
+</header>
+      <!-- ASEL's section ends -->
+
+      <!-- Gulya's section starts -->
       <div class="container">
         <section class="left-side-menu">
           <button>Compose</button>
         </section>
+        <!-- Gulya's section ends -->
+
+        <!-- Uliana's section starts -->
         <section class="centerpiece">
           <div class="pagenation">
             <div class="left">
@@ -329,6 +302,7 @@
               <svg class="more" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" alt="more" /></svg> 
               <span class="tooltiptext">More</span>
             </div>
+           
             </div>
             <div class="right">
               <section class="pagenation">1-50 of 1,000</section>
@@ -348,6 +322,7 @@
                   alt="arrow_drop_down"/></svg>
             </div>
           </div>
+
           <section class="emails">
           <div class="p-s-p">
             <section class="primary">
@@ -365,22 +340,38 @@
               <p class="p_s_p_text">Promotions</p>
             </section>
           </div>
-            <div class="email">
+            <ul class="email-list">
+              <li class="email">
+              <svg class="drag" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
               <div class="checkBoxHover">
               <input class="email-line checkbox" type="checkbox" />
             </div>
             <div class="starHover">
-
+              <svg class="'star" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></svg>
             </div>
+            <div class="importantHover">
+              <svg class="importantEmail" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 7H7.89l3.57 5-3.57 5H15l3.55-5z" opacity=".3"/><path d="M16.63 5.84C16.27 5.33 15.67 5 15 5H4l5 7-5 6.99h11c.67 0 1.27-.32 1.63-.83L21 12l-4.37-6.16zM15 17H7.89l3.57-5-3.57-5H15l3.55 5L15 17z"/></svg>
             </div>
+              <section class="sender">Seytech Bootcamp</section>
+              <section class="subject">Welcome to Bootcamp! <span class="emailContent"> - Hello, Student!  Welcome to our bootcamp! You going...</span> </section>
+              <section class="time">6.06 AM</section>
+            </li>
+            </ul>
+            
           </section>
         </section>
+        <!-- Uliana's section ends -->
+
+      <!-- Aimana's section starts -->
         <section class="right-side-menu">
           <button>Calendar</button>
         </section>
+      <!-- Aimana's section ends -->
+      <footer></footer>
       </div>
     </main>
 
     <script type="module" src="script.js"></script>
+   
   </body>
 </html>

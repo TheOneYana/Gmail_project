@@ -2,10 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    padding: 0;
+   
 }
-
-/* Asel Header Starts */
+/* Asel's CSS starts */
 header {
     position:fixed;
     z-index: 100;
@@ -13,6 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 65px;
+    width: 100vw;
     border-bottom: 1px solid whitesmoke;
     background-color: white;  
 }
@@ -44,15 +44,15 @@ header {
 
 .header-middle {
     position: fixed;
-    top: 10px;
-    left: 265px;
+    top: 15px;
+    left: 205px;
     display: flex;
     flex: 0.7;
     align-items: center;
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 5px;
-    height: 8%;
+    height: 7%;
     width: 40%;
     z-index: 15;
 }
@@ -131,6 +131,7 @@ header {
 a#support, a {
     text-decoration: none;
     color: black;
+
 }
 
 ul li {
@@ -266,6 +267,7 @@ ul.apps {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.2rem;  
     justify-content: center;
+    padding-left: 0;
 }
 
 ul.apps li:hover {
@@ -286,30 +288,9 @@ a#more-apps {
 div.more-apps {
     margin-bottom: 10px;
 }
+/* Asel's CSS ends */
 
-.email-list {
-    position: absolute;
-    top: 70px;
-    left: 265px;
-    line-height: 1.2;
-    overflow-y: scroll;
-    width:100%;
-    text-align: left;
-}
-div.sender, div.message, div.date {
-    display: inline-block;
-}
-
-div.sender {
-    width: 18%;
-}
-div.message {
-    width: 30%;
-}
-div.date {
-    width: 20%;
-}
-/* Asel Header Ends */
+/* Uliana's CSS starts */
 
 main {
     background-color: black;
@@ -317,7 +298,11 @@ main {
     height: 100vh;
     margin: auto;
 }
+.header {
+    background-color: aliceblue;
+    height: 65px;
 
+}
 .gmail-logo{
     height: 80%;
 }
@@ -326,6 +311,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+   
 }
 .centerpiece{
     display: flex;
@@ -342,11 +329,13 @@ main {
     justify-content: space-between;  
     color: white;
     font-size: 13px;
+    padding-right: 15px;
 }
 
 .left{
     display: flex;
     align-items: center;
+    
 
 }
 .right{
@@ -522,6 +511,7 @@ fill:#fff;
 }
 .input_tools{
     width: 20px;
+    margin-left: 8px;
 }
 .arrow_drop_down_right{
     margin-right: 3px;
@@ -530,11 +520,13 @@ fill:#fff;
     background-color: rgb(128, 128, 128, 0.5);
     height: 50px;
     display: flex;
+    border-bottom: 2px solid gray;
+    box-shadow: 0 2px 4px #262626 
 }
 .p-s-p section {
    background-color: none;
    border: none;
-   width: 200px;
+   width: 271px;
    text-align: left;
    color: white;
    font-size: 14px;
@@ -556,13 +548,11 @@ fill:#fff;
 }
 
 
-.emails{
-    overflow: auto;
+.centerpiece{
+    height: 100vh;
+    overflow: scroll;
 }
-.email{
-    background-color: rgb(128, 128, 128, 0.5);
-    height: 40px;
-}
+
 .left-side-menu{
     background-color: bisque;
     width: 260px;
@@ -585,7 +575,7 @@ input[type="checkbox"] {
     border: 2px solid rgb(178, 176, 176);
     border-radius: 2.5px;
     cursor: pointer;
-    margin-left: 20px;
+  
   }
   input[type="checkbox"]:hover {
     appearance: none;
@@ -598,3 +588,87 @@ input[type="checkbox"] {
     cursor: pointer;
     margin-left: 20px;
   }
+
+  .email{
+    background-color: rgb(128, 128, 128, 0.5);
+    height: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid grey;
+
+}
+.checkBoxHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat;
+    border-radius: 50%; */
+    margin-left: -11px;
+}
+.starHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat;
+    border-radius: 50%; */
+    margin-left: -7px;
+  
+}
+.importantHover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid wheat;
+    border-radius: 50%; */
+    margin-right: 8px;
+    margin-left: -7px;
+  
+    
+}
+.email-list{
+    margin: 0;
+    padding: 0;
+}
+
+.sender{
+    width: 150px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-right: 40px;
+}
+.subject{
+ width: 545px;
+ white-space: nowrap;
+ overflow-x: hidden;
+ margin-left: 10px;
+
+}
+.time{
+    width: 60px;
+    margin-left: 40px;
+  
+}
+.drag{
+    margin: 0;
+    visibility: hidden;
+    fill: rgba(231, 228, 228, 0.807)
+}
+.email:hover .drag{
+    visibility: visible;
+}
+.emailContent{
+    font-weight: 400;
+    color: rgb(190, 190, 190);
+}
+/* rgba(231, 228, 228, 0.807) */
+/* Uliana's CSS ends */
