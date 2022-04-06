@@ -312,6 +312,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   padding-top: 50px;
     
    
 }
