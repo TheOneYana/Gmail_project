@@ -36,8 +36,6 @@ function createEmail(emails) {
 createEmail(allInbox)
 
 
-
-
 // for(let i = 0; i<primary.length; i++)
 // primary[i].id = i+1;
 
