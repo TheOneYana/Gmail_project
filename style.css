@@ -33,6 +33,7 @@ header {
     align-items: center;
     flex: 0.25;
     width: 260px;
+    height: 50px;
 }
 
 .header-left span {
@@ -53,8 +54,8 @@ header {
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 5px;
-    height: 6%;
-    width: 40%;
+    height: 40px;
+    width: 400px;
     z-index: 15;
 }
 
