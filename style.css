@@ -134,7 +134,7 @@ a#support, a {
 
 }
 
-ul li {
+ul.suppor-links li, ul.apps li {
     list-style-type: none;
     padding-left: 5px;
 }
@@ -290,6 +290,7 @@ div.more-apps {
 }
 /* Asel's CSS ends */
 
+<<<<<<< HEAD
 /* Gulya's part starts */
 .container{
     display: flex;
@@ -497,6 +498,8 @@ border-radius: 10px;
 /* Gulya's part ends */
 
 
+=======
+>>>>>>> main
 /* Uliana's CSS starts */
 
 main {
@@ -535,17 +538,25 @@ main {
     color: white;
     font-size: 13px;
     padding-right: 15px;
+    position: fixed;
+    width: 83vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 .left{
     display: flex;
     align-items: center;
-    
+   width: 50%;
+ 
 
 }
 .right{
     display: flex;
     align-items: center;
+    width: 50%;
+    justify-content: end;
 
 }
 .selectAll{
@@ -726,7 +737,8 @@ fill:#fff;
     height: 50px;
     display: flex;
     border-bottom: 2px solid gray;
-    box-shadow: 0 2px 4px #262626 
+    box-shadow: 0 2px 4px #262626;
+    margin-top: 50px;
 }
 .p-s-p section {
    background-color: none;
@@ -804,6 +816,7 @@ input[type="checkbox"] {
     border: 2px solid rgb(178, 176, 176);
     border-radius: 2.5px;
     cursor: pointer;
+    margin-left: 8px;
   
   }
   input[type="checkbox"]:hover {
@@ -815,7 +828,7 @@ input[type="checkbox"] {
     border: 2px solid rgb(253, 251, 251);
     border-radius: 2.5px;
     cursor: pointer;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
 
   .email{
@@ -851,7 +864,7 @@ input[type="checkbox"] {
     align-items: center;
     /* border: 1px solid wheat;
     border-radius: 50%; */
-    margin-left: -7px;
+    margin-left: 2px;
   
 }
 .importantHover{
@@ -863,7 +876,7 @@ input[type="checkbox"] {
     /* border: 1px solid wheat;
     border-radius: 50%; */
     margin-right: 8px;
-    margin-left: -7px;
+ 
   
     
 }
@@ -910,7 +923,7 @@ input[type="checkbox"] {
     width: 60px;
     margin-left: 40px;
     font-size: 13px;
-    
+    margin-right: 10px;
     right: 60px;
     overflow-x: hidden;
   
@@ -927,34 +940,3 @@ input[type="checkbox"] {
 /* rgba(231, 228, 228, 0.807) */
 /* Uliana's CSS ends */
 
-
-/* @media (max-width: 1539px) {
-    .subject{
-        max-width: 80%;
-        white-space: nowrap;
-        overflow-x: hidden;
-        margin-left: 10px;
-    
-    }
-
-}
-@media (max-width: 1360px) {
-    .subject{
-        width: 80%;
-        white-space: nowrap;
-        overflow-x: hidden;
-        margin-left: 10px;
-    
-    }
-   
-}
-@media (max-width: 1240px) {
-    .subject{
-        width: 30%;
-        white-space: nowrap;
-        overflow-x: hidden;
-        margin-left: 10px;
-    
-    }
-   
-} */
