@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-   
+    font-family: 'Roboto', sans-serif;  
 }
 /* Asel's CSS starts */
 
@@ -33,6 +32,7 @@ header {
     align-items: center;
     flex: 0.25;
     width: 260px;
+    height: 50px;
 }
 
 .header-left span {
@@ -53,8 +53,8 @@ header {
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 5px;
-    height: 6%;
-    width: 40%;
+    height: 40px;
+    width: 400px;
     z-index: 15;
 }
 
@@ -87,7 +87,7 @@ header {
     justify-content: end;
 }
 /* By default show sidebar links */
-.sidebar-links {
+.sidebar-links .left-side-menu{
     position: fixed;
     top: 70px;
     left: 0;
@@ -100,7 +100,7 @@ header {
 
 /* Toggle sidebar class */
 .hide-sidebar {
-    transform: translate(-85%);
+    transform: translate(-80%);
 }
 
 /* By default hide support links */

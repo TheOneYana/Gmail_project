@@ -32,6 +32,7 @@ const googleApps = document.querySelector('.google-apps');
 const headerMiddle = document.querySelector('.header-middle');
 const main = document.querySelector('.main-container');
 const search = document.querySelector('#search');
+const sidebar =document.querySelector('.left-side-menu');
 
 let pageNumber = 0;
 let limit = 15;
@@ -303,9 +304,13 @@ const icons = document.querySelectorAll('[id = sidebarIcons]');
 // const search = document.querySelector('#search');
 
 
-menuToggle.addEventListener('click',function () {
-sidebarLinks.classList.toggle('hide-sidebar');
-});
+menuToggle.addEventListener('click',() =>{
+    if (sidebar.style.width ==='265px') {
+        sidebar.style.width = '50px';
+    } else {
+        sidebar.style.width ='265px';
+    }
+})
 
 supportIcon.addEventListener('click', () => {
     supportLinks.classList.toggle('show-support');
@@ -407,10 +412,23 @@ search.addEventListener('input', function (event) {
 // })
 
 //Tried to make Gulya's part work.
-// const composeBtn = document.querySelector('.compose');
+const composeBtn = document.querySelector('.compose');
 // composeBtn.addEventListener('mouseout', function(event) {
 //     sidebarLinks.style.width = '265px';
 //     console.log('hello')
 // }, true);
 
+sidebarLinks.addEventListener('mouseover', () => {
+    composeBtn.style.width = '265px';
+    sidebar.style.width ='265px';
+        // emailList.getElementsByClassName.width = "700px"
+})
 
+sidebarLinks.addEventListener('mouseout', () => {
+    composeBtn.style.width = '50px';
+    sidebar.style.width ='50px';
+// emailList.getElementsByClassName.width = "1200px"
+})
+// menuToggle.addEventListener('click',function () {
+// sidebar.classList.toggle('hide-sidebar');
+// });
