@@ -170,10 +170,19 @@ search.addEventListener('input', function (event) {
 // })
 
 //Tried to make Gulya's part work.
-// const composeBtn = document.querySelector('.compose');
+const composeBtn = document.querySelector('.compose');
 // composeBtn.addEventListener('mouseout', function(event) {
 //     sidebarLinks.style.width = '265px';
 //     console.log('hello')
 // }, true);
 
+// sidebarLinks.addEventListener('mouseover', () => {
+//     composeBtn.style.width = '265px';
+//     sidebarLinks.style.width ='265px';
+// })
+
+// sidebarLinks.addEventListener('mouseout', () => {
+//     composeBtn.style.width = '20px';
+//     sidebarLinks.style.width ='20px';
+// })
 
