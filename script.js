@@ -14,6 +14,7 @@ function createEmail(emails) {
            hour12: true,
        });
        const eachEmail = ` <li class="email">
+       <div class = 'one'>
        <svg class="drag" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
        <div class="checkBoxHover">
        <input class="email-line checkbox" type="checkbox" name="check-${emails[i].id}" id="${emails[i].id}"  />
@@ -25,8 +26,11 @@ function createEmail(emails) {
        <svg class="importantEmail" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 7H7.89l3.57 5-3.57 5H15l3.55-5z" opacity=".3"/><path d="M16.63 5.84C16.27 5.33 15.67 5 15 5H4l5 7-5 6.99h11c.67 0 1.27-.32 1.63-.83L21 12l-4.37-6.16zM15 17H7.89l3.57-5-3.57-5H15l3.55 5L15 17z"/></svg>
      </div>
        <section class="sender">${emails[i].senderEmail} </section>
-       <section class="subject">${emails[i].messageTitle}  <span class="emailContent"> - Hello, Student!  Welcome to our bootcamp! You going...</span> </section>
+       <section class="subject">${emails[i].messageTitle} </section> <span class="emailContent"> - Hello, Student!  Welcome to our bootcamp! You going...</span>
+       </div>
+       <div class = 'two'>
        <section class="time">${emailTime} </section>
+       </div>
      </li>`
      emailList.innerHTML += eachEmail;
 

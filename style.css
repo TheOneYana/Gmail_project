@@ -299,11 +299,7 @@ main {
     height: 100vh;
     margin: auto;
 }
-.header {
-    background-color: aliceblue;
-    height: 65px;
 
-}
 .gmail-logo{
     height: 80%;
 }
@@ -555,7 +551,7 @@ fill:#fff;
 .centerpiece{
     height: 100vh;
     overflow: scroll;
-    height: 94.5vh;
+    height: 100vh;
    
 }
 footer{
@@ -584,13 +580,13 @@ footer a{
 .left-side-menu{
     background-color: bisque;
     width: 260px;
-    height: 94.5vh;
+    height: 100vh;
 }
 
 .right-side-menu {
     background-color: rgb(60, 63, 110);
     width: 60px;
-    height: 94.5vh;
+    height: 100vh;
 
   
 }
@@ -622,14 +618,22 @@ input[type="checkbox"] {
     height: 37.5px;
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content:space-between;
     color: white;
     font-size: 15px;
     font-weight: 500;
     border: 1px solid grey;
-    
+   
 
 }
+.one{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+ 
+   
+}
+
 .checkBoxHover{
     width: 35px;
     height: 35px;
@@ -667,26 +671,38 @@ input[type="checkbox"] {
 .email-list{
     margin: 0;
     padding: 0;
+   
 
 }
+
 
 .sender{
     width: 150px;
     overflow-x: hidden;
     white-space: nowrap;
     margin-right: 40px;
+    
 }
 .subject{
- width: 545px;
- white-space: nowrap;
- overflow-x: hidden;
- margin-left: 10px;
+    max-width: 1000px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-left: 10px;
 
+}
+.emailContent{
+    font-weight: 400;
+    color: rgb(190, 190, 190);
+    max-width: 1000px;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 .time{
     width: 60px;
     margin-left: 40px;
     font-size: 13px;
+   
+   
   
 }
 .drag{
@@ -697,9 +713,8 @@ input[type="checkbox"] {
 .email:hover .drag{
     visibility: visible;
 }
-.emailContent{
-    font-weight: 400;
-    color: rgb(190, 190, 190);
-}
+
 /* rgba(231, 228, 228, 0.807) */
 /* Uliana's CSS ends */
+
+
