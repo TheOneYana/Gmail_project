@@ -134,7 +134,7 @@ a#support, a {
 
 }
 
-ul li {
+ul.suppor-links li, ul.apps li {
     list-style-type: none;
     padding-left: 5px;
 }
