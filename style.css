@@ -722,34 +722,3 @@ input[type="checkbox"] {
 /* rgba(231, 228, 228, 0.807) */
 /* Uliana's CSS ends */
 
-
-/* @media (max-width: 1539px) {
-    .subject{
-        max-width: 80%;
-        white-space: nowrap;
-        overflow-x: hidden;
-        margin-left: 10px;
-    
-    }
-
-}
-@media (max-width: 1360px) {
-    .subject{
-        width: 80%;
-        white-space: nowrap;
-        overflow-x: hidden;
-        margin-left: 10px;
-    
-    }
-   
-}
-@media (max-width: 1240px) {
-    .subject{
-        width: 30%;
-        white-space: nowrap;
-        overflow-x: hidden;
-        margin-left: 10px;
-    
-    }
-   
-} */
