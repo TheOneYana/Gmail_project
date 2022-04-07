@@ -87,7 +87,7 @@ header {
     justify-content: end;
 }
 /* By default show sidebar links */
-.sidebar-links {
+.sidebar-links .left-side-menu{
     position: fixed;
     top: 70px;
     left: 0;
@@ -100,7 +100,7 @@ header {
 
 /* Toggle sidebar class */
 .hide-sidebar {
-    transform: translate(-85%);
+    transform: translate(-80%);
 }
 
 /* By default hide support links */

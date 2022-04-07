@@ -64,11 +64,16 @@ const googleApps = document.querySelector('.google-apps');
 const headerMiddle = document.querySelector('.header-middle');
 const main = document.querySelector('.main-container');
 const search = document.querySelector('#search');
+const sidebar =document.querySelector('.left-side-menu');
 
 
-menuToggle.addEventListener('click',function () {
-sidebarLinks.classList.toggle('hide-sidebar');
-});
+menuToggle.addEventListener('click',() =>{
+    if (sidebar.style.width ==='265px') {
+        sidebar.style.width = '50px';
+    } else {
+        sidebar.style.width ='265px';
+    }
+})
 
 supportIcon.addEventListener('click', () => {
     supportLinks.classList.toggle('show-support');
@@ -176,13 +181,17 @@ const composeBtn = document.querySelector('.compose');
 //     console.log('hello')
 // }, true);
 
-// sidebarLinks.addEventListener('mouseover', () => {
-//     composeBtn.style.width = '265px';
-//     sidebarLinks.style.width ='265px';
-// })
+sidebarLinks.addEventListener('mouseover', () => {
+    composeBtn.style.width = '265px';
+    sidebar.style.width ='265px';
+        // emailList.getElementsByClassName.width = "700px"
+})
 
-// sidebarLinks.addEventListener('mouseout', () => {
-//     composeBtn.style.width = '20px';
-//     sidebarLinks.style.width ='20px';
-// })
-
+sidebarLinks.addEventListener('mouseout', () => {
+    composeBtn.style.width = '50px';
+    sidebar.style.width ='50px';
+// emailList.getElementsByClassName.width = "1200px"
+})
+// menuToggle.addEventListener('click',function () {
+// sidebar.classList.toggle('hide-sidebar');
+// });
