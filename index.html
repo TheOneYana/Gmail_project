@@ -275,8 +275,179 @@
 
       <!-- Gulya's section starts -->
       <div class="container">
-        <section class="left-side-menu">
-          <button>Compose</button>
+        <section id="hover-left" class="fixed left-menu">
+            <div id="compose">
+                <button class="composebtn">
+                    <img src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png" alt="This is compose button">
+                </button>
+                <div class="composebtn-displayed">
+                    <img src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png" alt="This is compose button">
+                    <p>Compose</p> 
+                </div>
+            </div>
+            <div id="sidebar-left">
+                <div id="sidebarIcons">
+                    <span class="material-icons inbox">inbox</span>
+                    <h3 style="font-weight: 600;">Inbox</h3>
+                    <span class="totalInbox"></span>
+                    <span class="tooltip-text">Inbox</span>
+                </div>
+                <div id="sidebarIcons" class="starred">
+                    <span class="material-icons">star</span>
+                    <h3>Starred</h3>
+                    <span class="tooltip-text">Starred</span>
+                </div>
+                <div id="sidebarIcons">
+                    <span class="material-icons">access_time</span>
+                    <h3>Snoozed</h3>
+                    <span class="tooltip-text">Snoozed</span>
+                </div>
+                <div id="sidebarIcons">
+                    <span class="material-icons">label_important</span>
+                    <h3>Important</h3>
+                    <span class="tooltip-text">Important</span>
+                </div>
+                <div id="sidebarIcons">
+                    <span class="material-icons">send</span>
+                    <h3>Sent</h3>
+                    <span class="tooltip-text">Sent</span>
+                </div>
+                <div id="sidebarIcons">
+                    <span class="material-icons">note</span>
+                    <h3>Drafts</h3>
+                    <span class="tooltip-text">Drafts</span>
+                </div>
+                <div id="sidebarIcons" class="category" style="padding: 0px;">
+                    <span id ="arrow" class="material-icons">arrow_right</span>                
+                    <span id ="label" class="material-icons">label</span>
+                    <h3>Categories</h3>
+                    <span class="tooltip-text">Categories</span>          
+                </div>
+                    <!-- expanded category starts -->
+                    <div id="expanded-category" style="display: none;">
+                        <div id="sidebarIcons" class="social">
+                            <span class="material-icons social">group</span>
+                            <h3 style="font-weight: 600;">Social</h3>
+                            <span class="totalSnum"></span>
+                            <span class="tooltip-text">Social</span>
+                        </div>
+                
+                        <div id="sidebarIcons">
+                            <span class="material-icons">forum</span>
+                            <h3>Forums</h3>
+                            <span class="tooltip-text">Forums</span>
+                        </div>
+                        <div id="sidebarIcons" class="prom">
+                            <span class="material-icons promotions">sell</span>
+                            <h3  style="font-weight: 600;">Promotions</h3>
+                            <span class="totalPnum"></span>
+                            <span class="tooltip-text">Promotions</span>
+                        </div>
+                    </div>
+                <!-- expanded category ends -->
+                <div id="sidebarIcons">
+                    <span class="material-icons">label</span>
+                    <h3>Personal</h3>
+                    <span class="tooltip-text">Personal</span>
+                </div>
+                <div id="sidebarIcons">
+                    <span class="material-icons more">expand_more</span>
+                    <h3 class="more-less">More</h3>
+                    <span class="tooltip-text">More</span>
+                </div>
+                <!-- expanded-more starts -->
+                <div id="expanded-more" style="display: none;">
+                    <div id="sidebarIcons">
+                        <span class="material-icons">comment</span>
+                        <h3>Chats</h3>
+                        <span class="tooltip-text">Chats</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">schedule_send</span>
+                        <h3>Scheduled</h3>
+                        <span class="tooltip-text">Scheduled</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">email</span>
+                        <h3>All Mail</h3>
+                        <span class="tooltip-text">All Mail</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">report</span>
+                        <h3>Spam</h3>
+                        <span class="tooltip-text">Spam</span>
+                        <span class="totalSpam"></span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">delete</span>                
+                        <h3>Trash</h3>
+                        <span class="tooltip-text">Trash</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">info</span>
+                        <h3>Updates</h3>
+                        <span class="tooltip-text">Updates</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">label</span>         
+                        <h3>Receipts</h3>
+                        <span class="tooltip-text">Receipts</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">label</span> 
+                        <h3>Travel</h3>
+                        <span class="tooltip-text">Travel</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">label</span> 
+                        <h3>Work</h3>
+                        <span class="tooltip-text">Work</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">settings</span>
+                        <h3>Manage Labels</h3>
+                        <span class="tooltip-textW">Manage Labels</span>
+                    </div>
+                    <div id="sidebarIcons">
+                        <span class="material-icons">add</span>
+                        <h3>Create new label</h3>
+                        <span class="tooltip-textW">Create new label</span>
+                    </div>
+                </div>
+                <!-- expanded-more ends -->
+            </div>
+            <!-- meet starts -->
+            <div id="meet">
+                <p id="displayedMp">Meet</p>
+                <div id="sidebarIcons">
+                    <span class="material-icons">videocam</span>
+                    <h3>New meeting</h3>
+                    <span class="tooltip-textW">New meeting</span>
+                </div>
+                <div id="sidebarIcons">
+                    <span class="material-icons">meeting_room</span>
+                    <h3>Join a meeting</h3>
+                    <span class="tooltip-textW">Join a meeting</span>
+                </div>
+            </div>
+             <!-- meet ends -->
+        
+            <!-- hangouts starts -->
+            <div id="hangouts">
+                <p id="displayedHp">Hangouts</p>
+                <button class="footer-button" style="padding-left:22px; display: none;"><span class="material-icons">comment</span></button>
+                <div id="sidebarIcons">
+                    <span class="material-icons">account_circle</span> 
+                    <h3>Gulya</h3>
+                    <span class="material-icons ">arrow_drop_down</span>
+                    <span class="material-icons add">add</span>
+                </div>
+            </div>
+             <!-- hangouts ends -->
+             <div id="leftSideFooter">
+                <button class="footer-button"><span class="material-icons">account_circle</span></button> 
+                <button class="footer-button"><span class="material-icons">comment</span></button>
+             </div>
         </section>
         <!-- Gulya's section ends -->
 
@@ -307,9 +478,9 @@
             </div>
             <div class="right">
               <section class="pagenation">1-50 of 1,000</section>
-              <svg  class="arrow_left" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" alt="arrow_left" /></svg>
-              <svg
-                class="arrow_right" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" alt="arrow_right"/></svg>
+              <button class="prev"> <svg  class="arrow_left" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" alt="arrow_left" /></svg></button>
+              <button class = "next"><svg
+                 class="arrow_right next" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" alt="arrow_right"/></svg></button>
             
                 
             
@@ -381,6 +552,5 @@
     </main>
 
     <script type="module" src="script.js"></script>
-   
   </body>
 </html>
