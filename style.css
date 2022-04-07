@@ -617,21 +617,15 @@ input[type="checkbox"] {
     background-color: rgb(128, 128, 128, 0.5);
     height: 37.5px;
     display: flex;
+    
     align-items: center;
     justify-content:space-between;
     color: white;
     font-size: 15px;
     font-weight: 500;
     border: 1px solid grey;
-   
+    
 
-}
-.one{
-    display: flex;
-    align-items: center;
-    justify-content:left;
- 
-   
 }
 
 .checkBoxHover{
@@ -683,8 +677,18 @@ input[type="checkbox"] {
     margin-right: 40px;
     
 }
+.one{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    width: 90%;
+    width: calc(100% - 100px);
+    overflow-x: hidden;
+}
+
 .subject{
-    max-width: 1000px;
+    max-width: 100%;
+    width: calc(100% - 100px);
     white-space: nowrap;
     overflow-x: hidden;
     margin-left: 10px;
@@ -693,16 +697,17 @@ input[type="checkbox"] {
 .emailContent{
     font-weight: 400;
     color: rgb(190, 190, 190);
-    max-width: 1000px;
     overflow-x: hidden;
     white-space: nowrap;
+    
 }
 .time{
     width: 60px;
     margin-left: 40px;
     font-size: 13px;
-   
-   
+    
+    right: 60px;
+    overflow-x: hidden;
   
 }
 .drag{
@@ -718,3 +723,33 @@ input[type="checkbox"] {
 /* Uliana's CSS ends */
 
 
+/* @media (max-width: 1539px) {
+    .subject{
+        max-width: 80%;
+        white-space: nowrap;
+        overflow-x: hidden;
+        margin-left: 10px;
+    
+    }
+
+}
+@media (max-width: 1360px) {
+    .subject{
+        width: 80%;
+        white-space: nowrap;
+        overflow-x: hidden;
+        margin-left: 10px;
+    
+    }
+   
+}
+@media (max-width: 1240px) {
+    .subject{
+        width: 30%;
+        white-space: nowrap;
+        overflow-x: hidden;
+        margin-left: 10px;
+    
+    }
+   
+} */
