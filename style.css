@@ -329,17 +329,25 @@ main {
     color: white;
     font-size: 13px;
     padding-right: 15px;
+    position: fixed;
+    width: 83vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 
 .left{
     display: flex;
     align-items: center;
-    
+   width: 50%;
+ 
 
 }
 .right{
     display: flex;
     align-items: center;
+    width: 50%;
+    justify-content: end;
 
 }
 .selectAll{
@@ -520,7 +528,8 @@ fill:#fff;
     height: 50px;
     display: flex;
     border-bottom: 2px solid gray;
-    box-shadow: 0 2px 4px #262626 
+    box-shadow: 0 2px 4px #262626;
+    margin-top: 50px;
 }
 .p-s-p section {
    background-color: none;
