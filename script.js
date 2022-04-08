@@ -22,7 +22,7 @@ const newEmails = allInbox.map((item, index) => ({id: index + 1,...item}));
 console.log(newEmails)
 
 const menuToggle = document.querySelector('#menu-toggle');
-const sidebarLinks = document.querySelector('.sidebar-links');
+// const sidebarLinks = document.querySelector('.sidebar-links');
 const supportIcon = document.querySelector('#support-icon');
 const supportLinks = document.querySelector('.support-links');
 const profileIcon = document.querySelector('#profile-icon');
@@ -30,9 +30,10 @@ const accountInfo = document.querySelector('.account-info');
 const appsIcon = document.querySelector('#apps-icon');
 const googleApps = document.querySelector('.google-apps');
 const headerMiddle = document.querySelector('.header-middle');
-const main = document.querySelector('.main-container');
+// const main = document.querySelector('.main-container');
 const search = document.querySelector('#search');
-const sidebar =document.querySelector('.left-side-menu');
+// const sidebar =document.querySelector('.left-side-menu');
+const composeP=document.querySelector('.compose-p');
 
 let pageNumber = 0;
 let limit = 50;
@@ -111,7 +112,7 @@ function create_emails() {
         
         emailList.innerHTML += eachEmail;
     }
-
+//Search filter and display
 function renderData(filteredData) {
     emailList.innerHTML = '';
     create_emails(filteredData);
@@ -258,6 +259,69 @@ const icons = document.querySelectorAll('[id = sidebarIcons]');
         })
     }
 
+//Sidebar mouseover effect
+sideLeft.addEventListener('mouseover', () => {
+    bigCompose.style.width = '180px';
+    sideLeft.style.width ='265px';
+    composeP.style.visibility='visible';
+    displayedMp.style.visibility='visible'; 
+    displayedHp.style.visibility = 'visible';  
+})
+
+sideLeft.addEventListener('mouseout', () => {
+    bigCompose.style.width = '70px';
+    sideLeft.style.width ='75px';
+    composeP.style.visibility = 'hidden';
+    displayedMp.style.visibility ='hidden';
+    displayedHp.style.visibility = 'hidden';
+})
+
+//Menu button click
+menuToggle.addEventListener('click',() =>{
+    if (sideLeft.style.width ==='265px') {
+        sideLeft.style.width = '75px';
+    } else {
+        sideLeft.style.width ='265px';
+    }
+    if ( bigCompose.style.width ==='180px') {
+        bigCompose.style.width = '70px';
+    } else {
+        bigCompose.style.width = '180px';
+    }
+    if (composeP.style.visibility==='visible') {
+        composeP.style.visibility= 'hidden';
+    } else {
+        composeP.style.visibility = 'visible';
+    }
+    if (displayedMp.style.visibility === 'visible') {
+        displayedMp.style.visibility = 'hidden';
+    } else { 
+        displayedMp.style.visibility ='visible';
+    }
+    if (displayedHp.style.visibility === 'visible') {
+        displayedHp.style.visibility = 'hidden';
+    } else { 
+        displayedHp.style.visibility ='visible';
+    }
+
+});
+//Header icons toggle
+supportIcon.addEventListener('click', () => {
+    supportLinks.classList.toggle('show-support');
+} )
+
+profileIcon.addEventListener('click', () => {
+   accountInfo.classList.toggle('hide-account-info');
+});
+
+appsIcon.addEventListener('click', () => {
+    googleApps.classList.toggle('hide-apps');
+})
+
+headerMiddle.addEventListener('click', () => {
+    headerMiddle.classList.toggle('search-change');
+})
+
 // previous Code
 // import { allInbox } from './all-emails.js';
 // // import { promotions } from './promotions.js';
@@ -324,55 +388,6 @@ const icons = document.querySelectorAll('[id = sidebarIcons]');
 // const headerMiddle = document.querySelector('.header-middle');
 // const main = document.querySelector('.main-container');
 // const search = document.querySelector('#search');
-
-
-menuToggle.addEventListener('click',() =>{
-    if (sideLeft.style.width ==='265px') {
-        sideLeft.style.width = '75px';
-    } else {
-        sideLeft.style.width ='265px';
-    }
-    if ( bigCompose.style.width ==='180px') {
-        bigCompose.style.width = '70px';
-    } else {
-        bigCompose.style.width = '180px';
-    }
-    if (composeP.style.visibility==='visible') {
-        composeP.style.visibility= 'hidden';
-    } else {
-        composeP.style.visibility = 'visible';
-    }
-    if (displayedMp.style.visibility === 'visible') {
-        displayedMp.style.visibility = 'hidden';
-    } else { 
-        displayedMp.style.visibility ='visible';
-    }
-    if (displayedHp.style.visibility === 'visible') {
-        displayedHp.style.visibility = 'hidden';
-    } else { 
-        displayedHp.style.visibility ='visible';
-    }
-
-})
-
-supportIcon.addEventListener('click', () => {
-    supportLinks.classList.toggle('show-support');
-} )
-
-profileIcon.addEventListener('click', () => {
-   accountInfo.classList.toggle('hide-account-info');
-});
-
-appsIcon.addEventListener('click', () => {
-    googleApps.classList.toggle('hide-apps');
-})
-
-headerMiddle.addEventListener('click', () => {
-    headerMiddle.classList.toggle('search-change');
-})
-
-
-    
 
 //Pagination. Uliana's part is needed to select buttons
 // const pageInfoSpan = document.querySelector('#page-info');
@@ -448,25 +463,25 @@ headerMiddle.addEventListener('click', () => {
 //     sidebarLinks.style.width = '265px';
 //     console.log('hello')
 // }, true);
-const sidebarLeft=document.querySelector('#sidebar-left');
-const composeDiv=document.querySelector('#compose');
-const composeP=document.querySelector('.compose-p');
+// const sidebarLeft=document.querySelector('#sidebar-left');
+// const composeDiv=document.querySelector('#compose');
 
-sideLeft.addEventListener('mouseover', () => {
-    bigCompose.style.width = '180px';
-    sideLeft.style.width ='265px';
-    composeP.style.visibility='visible';
-    displayedMp.style.visibility='visible'; 
-    displayedHp.style.visibility = 'visible';  
-})
 
-sideLeft.addEventListener('mouseout', () => {
-    bigCompose.style.width = '70px';
-    sideLeft.style.width ='75px';
-    composeP.style.visibility = 'hidden';
-    displayedMp.style.visibility ='hidden';
-    displayedHp.style.visibility = 'hidden';
-})
+// sideLeft.addEventListener('mouseover', () => {
+//     bigCompose.style.width = '180px';
+//     sideLeft.style.width ='265px';
+//     composeP.style.visibility='visible';
+//     displayedMp.style.visibility='visible'; 
+//     displayedHp.style.visibility = 'visible';  
+// })
+
+// sideLeft.addEventListener('mouseout', () => {
+//     bigCompose.style.width = '70px';
+//     sideLeft.style.width ='75px';
+//     composeP.style.visibility = 'hidden';
+//     displayedMp.style.visibility ='hidden';
+//     displayedHp.style.visibility = 'hidden';
+// })
 
 
 // menuToggle.addEventListener('click',function () {
