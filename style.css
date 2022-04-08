@@ -46,7 +46,7 @@ header {
 .header-middle {
     position: fixed;
     top: 5px;
-    left: 205px;
+    left: 250px;
     display: flex;
     flex: 0.7;
     align-items: center;
@@ -54,7 +54,7 @@ header {
     padding: 8px;
     border-radius: 5px;
     height: 40px;
-    width: 400px;
+    width: 500px;
     z-index: 15;
 }
 
