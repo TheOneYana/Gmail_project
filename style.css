@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-   
+    font-family: 'Roboto', sans-serif;  
 }
 /* Asel's CSS starts */
 
@@ -33,6 +32,7 @@ header {
     align-items: center;
     flex: 0.25;
     width: 260px;
+    height: 50px;
 }
 
 .header-left span {
@@ -53,8 +53,8 @@ header {
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 5px;
-    height: 6%;
-    width: 40%;
+    height: 40px;
+    width: 400px;
     z-index: 15;
 }
 
@@ -87,7 +87,7 @@ header {
     justify-content: end;
 }
 /* By default show sidebar links */
-.sidebar-links {
+.sidebar-links .left-side-menu{
     position: fixed;
     top: 70px;
     left: 0;
@@ -100,7 +100,7 @@ header {
 
 /* Toggle sidebar class */
 .hide-sidebar {
-    transform: translate(-85%);
+    transform: translate(-80%);
 }
 
 /* By default hide support links */
@@ -134,7 +134,7 @@ a#support, a {
 
 }
 
-ul li {
+ul.suppor-links li, ul.apps li {
     list-style-type: none;
     padding-left: 5px;
 }
@@ -290,6 +290,241 @@ div.more-apps {
 }
 /* Asel's CSS ends */
 
+/* Gulya's part starts */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;  
+  
+}
+
+#sidebar-left {
+    flex: 0.3;
+    max-width: 265px;
+    padding-top: 15px;
+    overflow: hidden;
+    height: 200px;
+    border-bottom: 1px solid whitesmoke;
+    position: relative;
+}
+
+.left-menu {
+    /* max-width: 275px; */
+    transition: all 0.2s ease;
+    height: 100vh;
+    background-color: white;
+}
+#sidebar-left{
+    border-top: 1px solid whitesmoke;
+}
+#sidebar-left:hover {
+    overflow: auto;
+}
+#compose {
+    border-bottom: 1px solid whitesmoke;
+    overflow: hidden;
+    height: 86px;
+}
+.composebtn {
+    background-color: white;
+    padding: 13px 15px;
+    border-radius: 50%;
+    font-size: medium;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    display: none;
+}
+.composebtn-displayed {
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: medium;
+    margin: 10px;
+    position: relative;
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    width: 180px;
+    flex-wrap: wrap;
+    height: 50px;
+}
+.composebtn-displayed div {
+    padding-right: 10px;
+}
+.composebtn-displayed p {
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#sidebarIcons {
+    position: relative;
+    display: inline; 
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 220px;
+    padding: 0 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+#sidebarIcons .material-icons{
+    padding: 0 10px;
+}
+#sidebarIcons #arrow {
+    padding-right: 0.5px;
+}
+#sidebarIcons #label {
+    padding: 1px;
+}
+#sidebarIcons h3 {
+    flex: 1;
+    margin-left: 11px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.totalInbox, .totalSnum, .totalPnum, .totalSpam {
+    font-size: small;
+}
+#arrowRight {
+    padding: 0px !important;
+}
+#sidebarIcons:hover,
+#sidebarIcons:hover h3 {
+    background-color: rgb(240, 238, 238);
+}
+.tooltip-text {
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 75%;
+    top: -30%;
+    width: 75px;
+    background-color: gray;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 0px;
+    border-radius: 7px;
+}
+.tooltip-textW {
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: -30%;
+    width: 130px;
+    background-color: gray;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 0px;
+    border-radius: 7px;
+}
+#sidebarIcons:hover .tooltip-text {
+    display: block;
+}
+#sidebarIcons:hover .tooltip-textW {
+    display: block;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(188, 185, 185); 
+    box-shadow: inset 0 0 5px grey; 
+}
+::-webkit-scrollbar-truck:hover {
+box-shadow: inset 0 0 3px grey; 
+border-radius: 10px; 
+}
+#meet, #hangouts {
+    overflow: hidden;
+    border-bottom: 1px solid whitesmoke;
+}
+#meet h3{
+    display: flex;
+    align-items: center;
+}
+#displayedMp, #displayedHp {
+    padding-left: 15px;
+    font-size: 15px;
+    margin: 15px;
+}
+
+#sidebarIcons .add {
+    padding-right: 0px;
+    padding-left: 45px;
+}
+
+div#leftSideFooter {
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    height: 40px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* position: absolute; */
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    border-top: 1px solid whitesmoke;
+  
+    /* transform: translate(-50%, -50%); */
+}  
+/* button.footer-button-account {
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+}
+button.footer-button-chat {
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+} */
+
+.footer-button {
+    background-color: white;
+    border: none;
+} 
+
+/* js classes starts */
+.active {
+    max-width: 73px;
+}
+.fixed {
+    max-width: 265px;
+}
+.changeColor{
+    background-color: rgb(200, 196, 196);
+}
+.changeColorpink{
+    background-color: rgb(244, 212, 212);
+     color: rgb(234, 17, 17);
+}
+.changeColorblue{
+    background-color: rgb(213, 227, 246);
+     color:  #1a73e8;;
+}
+.changeColorgreen{
+    background-color: rgb(213, 246, 238);
+     color: #188038;
+}
+/* js classes ends */
+/* Gulya's part ends */
+
 
 /* Uliana's CSS starts */
 
@@ -299,51 +534,63 @@ main {
     height: 100vh;
     margin: auto;
 }
-.header {
-    background-color: aliceblue;
-    height: 65px;
 
-}
 .gmail-logo{
     height: 80%;
 }
 
-.container{
+/* .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   padding-top: 50px;
+   width: 100%;
     
    
-}
+} */
 .centerpiece{
     display: flex;
     flex-direction: column;
     align-items:initial;
     width: 100%;
     background-color: rgb(128, 128, 128, 0.5);
-   
-    
+    padding: 0;
+
 }
 .pagenation{
-    background-color: none;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;  
-    color: white;
+    color: rgb(108, 108, 108);
     font-size: 13px;
     padding-right: 15px;
+    position: sticky;
+   top: 0;
+    
+    
+    width: 100%;
+    background-color: white;
+
+}
+
+.pages{
+    margin-right: 10px;
 }
 
 .left{
     display: flex;
     align-items: center;
-    
-
 }
+
+  
+ 
+
+
 .right{
     display: flex;
     align-items: center;
+    justify-content: end;
 
 }
 .selectAll{
@@ -509,12 +756,19 @@ fill:#fff;
     width: 18px;
     margin: 0 10px;
 }
+.arrow_right{
+    fill: grey;
+}
 .arrow_left{
     fill:rgb(178, 176, 176);
 }
 .input_tools{
     width: 20px;
     margin-left: 8px;
+    
+}
+.input_tools{
+    fill: gray;
 }
 .arrow_drop_down_right{
     margin-right: 3px;
@@ -524,7 +778,9 @@ fill:#fff;
     height: 50px;
     display: flex;
     border-bottom: 2px solid gray;
-    box-shadow: 0 2px 4px #262626 
+    box-shadow: 0 2px 4px #262626;
+  
+    width: 100%;
 }
 .p-s-p section {
    background-color: none;
@@ -553,18 +809,20 @@ fill:#fff;
 
 .centerpiece{
     height: 100vh;
-    overflow: scroll;
-    height: 94.5vh;
+    overflow-y: scroll;
+    height: 100vh;
    
 }
 footer{
     height: 65px;
-    background-color: black;     
+    background-color: rgb(110, 109, 109);     
    color: white;
    text-align: center;
    padding-top: 12px;
    font-size: 13px;
-  
+   bottom: 0;
+   margin-bottom: 0;
+   
 }
 footer a{
     text-decoration: none;
@@ -574,22 +832,60 @@ footer a{
 }
 .footerOne{
     display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 .footerTwo{
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+   
 }
+.footerTwo svg {
+    height: 19px;
+}
+.footerLinks{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.bar{
+    display: flex;
+    align-items: center;
+}
+.barleft{
+    width: 150px;
+    height: 7px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 6px;
+    z-index: 2;
+    /* border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px; */
+}
+.barright{
+    width:80px;
+    height: 7px;
+    border: 1px solid rgb(183, 182, 182);
+    background-color: rgb(179, 179, 179);
+    margin-left: -5px;
+    border-radius: 6px;
+}
+
 
 .left-side-menu{
     background-color: bisque;
     width: 260px;
-    height: 94.5vh;
+    height: 100vh;
 }
 
 .right-side-menu {
     background-color: rgb(60, 63, 110);
     width: 60px;
-    height: 94.5vh;
+    height: 100vh;
 
   
 }
@@ -602,6 +898,7 @@ input[type="checkbox"] {
     border: 2px solid rgb(178, 176, 176);
     border-radius: 2.5px;
     cursor: pointer;
+    margin-left: 8px;
   
   }
   input[type="checkbox"]:hover {
@@ -613,15 +910,16 @@ input[type="checkbox"] {
     border: 2px solid rgb(253, 251, 251);
     border-radius: 2.5px;
     cursor: pointer;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
 
   .email{
     background-color: rgb(128, 128, 128, 0.5);
     height: 37.5px;
     display: flex;
+    
     align-items: center;
-    justify-content:left;
+    justify-content:space-between;
     color: white;
     font-size: 15px;
     font-weight: 500;
@@ -629,6 +927,7 @@ input[type="checkbox"] {
     
 
 }
+
 .checkBoxHover{
     width: 35px;
     height: 35px;
@@ -647,7 +946,7 @@ input[type="checkbox"] {
     align-items: center;
     /* border: 1px solid wheat;
     border-radius: 50%; */
-    margin-left: -7px;
+    margin-left: 2px;
   
 }
 .importantHover{
@@ -659,33 +958,57 @@ input[type="checkbox"] {
     /* border: 1px solid wheat;
     border-radius: 50%; */
     margin-right: 8px;
-    margin-left: -7px;
+ 
   
     
 }
 .email-list{
     margin: 0;
     padding: 0;
+   
 
 }
+
 
 .sender{
     width: 150px;
     overflow-x: hidden;
     white-space: nowrap;
     margin-right: 40px;
+    
 }
+.one{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    width: 90%;
+    width: calc(100% - 100px);
+    overflow-x: hidden;
+}
+
 .subject{
- width: 545px;
- white-space: nowrap;
- overflow-x: hidden;
- margin-left: 10px;
+    max-width: 100%;
+    width: calc(100% - 100px);
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-left: 10px;
 
 }
+.emailContent{
+    font-weight: 400;
+    color: rgb(190, 190, 190);
+    overflow-x: hidden;
+    white-space: nowrap;
+    
+}
 .time{
-    width: 60px;
+    width: 30px;
     margin-left: 40px;
     font-size: 13px;
+    margin-right: 12px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: end;
   
 }
 .drag{
@@ -696,10 +1019,7 @@ input[type="checkbox"] {
 .email:hover .drag{
     visibility: visible;
 }
-.emailContent{
-    font-weight: 400;
-    color: rgb(190, 190, 190);
-}
+
 /* rgba(231, 228, 228, 0.807) */
 /* Uliana's CSS ends */
 
@@ -717,7 +1037,7 @@ input[type="checkbox"] {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-top: 15px;
    
   
@@ -773,7 +1093,7 @@ input[type="checkbox"] {
     width: 29%;
     height: 100vh;
     background-color: rgb(248, 248, 248);
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 10px;
 }
 .calendar1-text{
@@ -839,7 +1159,7 @@ hr{
         width: 29%;
         height: 100vh;
         background-color:white;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         padding: 9px;
         border: 1px solid rgb(234, 232, 232);
 
@@ -952,7 +1272,7 @@ hr{
         width: 29%;
         height: 100vh;
         background-color: white;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         border: 1px solid rgb(234, 232, 232);
         color: rgb(107, 106, 106);
     } 
@@ -1019,7 +1339,7 @@ hr{
         width: 29%;
         height: 100vh;
         background-color: rgb(255, 255, 255);
-        margin-top: 50px;
+        /* margin-top: 50px; */
         border: 1px solid rgb(234, 232, 232);
     } 
    .header-text4{
@@ -1046,10 +1366,8 @@ hr{
         top: 80px;
         font-size: 20px;
     }  
-    .btn{
+    .btn-side-bar{
        margin-top:20px;
-    }
-    button{
        border: none;
        border-radius: 5px;
        padding: 10px;
@@ -1057,6 +1375,14 @@ hr{
        background-color: rgb(55, 81, 227);
        color: white;
     }
+    /* button{
+       border: none;
+       border-radius: 5px;
+       padding: 10px;
+       width: 50%;
+       background-color: rgb(55, 81, 227);
+       color: white;
+    } */
 
     /* .content-note{
         text-align: center;
@@ -1098,3 +1424,229 @@ hr{
  
 
 
+.openEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   padding-top: 50px;
+   width: 100%;
+    background-color: #fff;
+   
+}
+.Three {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+}
+.pagenationTwo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    padding-right: 15px;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   background-color: white;
+}
+.pagenationTwo svg{
+    fill: rgb(192, 191, 191);
+}
+.leftEmail{
+    display: flex;
+    align-items: center;
+}
+.Hover{
+    width:35px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.oneOf, .twoOf{
+    border-right: 1px solid rgb(247, 246, 246);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.emailHeader{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    width: 100%;
+    background-color: white;
+    
+  
+}
+.leftSide{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.rightSide{
+    display: flex;
+    align-items: center;
+}
+.emailSubject{
+    display: flex;
+    align-items: row;
+    width: 50vw;
+   white-space: nowrap;
+   font-size: 20px;
+   margin-left: 77px;
+}
+.importantThree{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    margin-left: 20px;
+    width: 50%;
+    height:24px;
+}
+.removeLabel{
+    height: 20px;
+    width: 20px;
+    fill: gray;
+}
+.removeLabel.Hover{
+    height: 25.3px;
+    display: flex;
+    align-items: center;
+    width: 15px;
+    margin-left: 0px;
+    border: 1px solid gainsboro;
+    background-color: gainsboro;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.inbox{
+    font-size: 16px;
+}
+.inbox.Hover{
+    margin-right: 0px;
+    border: 1px solid gainsboro;
+    width: 50px;
+    padding: 2px;
+    background-color: gainsboro;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.importantLabel{
+    fill:rgb(123, 122, 122)
+    
+}
+.emailHeader svg{
+    fill: grey;
+}
+.emailSender{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    width: 100%;
+
+    background-color: white;
+}
+.emailSender svg{
+    fill: gray;
+}
+.leftPart{
+    display: flex;
+    align-items: center;
+
+}
+.rightPart{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    justify-content: end;
+}
+.rightSide .Hover{
+    width: 20px;
+    
+}
+.rightSide{
+    margin-right: 10px;
+}
+.emailText{
+    width: 76.7vw;
+    width: 90%;
+    width: calc(100% - 100px);
+    margin-left: 76px;
+    background-color: rgb(208, 208, 208);
+    margin-bottom: 35px;
+}
+.toMe{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+.toMe svg{
+    width: 20px;
+}
+.arrowB{
+    border: 1px solid rgb(182, 179, 179);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: gainsboro;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.senderIcon{
+   margin-left: 10px;
+   margin-right: 7px;
+}
+.senderEmail{
+    margin-left: 10px;
+}
+.Hover.toMe{
+    margin: 0;
+}
+.time{
+    white-space: nowrap;
+    width: 130px;
+}
+.emailTextAndButtons{
+    background-color: #fff;
+}
+.buttonsInEmail{
+    padding-bottom: 40px;
+    margin-left: 75px;
+    width: 300px;
+
+    
+}
+.buttonsInEmail button{
+    padding: 0;
+    margin-right: 10px;
+
+
+}
+.buttonsEmail{
+   width: 110px;
+   height: 40px;
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   background-color: white;
+   padding: 0;
+ 
+  
+
+}
+.buttonsEmail svg{
+    fill: rgb(65, 64, 64);
+    margin-right: 10px;
+    margin-left: 10px;
+}
