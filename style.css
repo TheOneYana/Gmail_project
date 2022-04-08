@@ -297,8 +297,19 @@ div.more-apps {
     justify-content: space-around;
     padding-top: 50px;  
 }
+
+#sidebar-left {
+    flex: 0.3;
+    max-width: 265px;
+    padding-top: 15px;
+    overflow: hidden;
+    height: 200px;
+    border-bottom: 1px solid whitesmoke;
+    /* position: relative; */
+}
+
 .left-menu {
-    max-width: 275px;
+    /* max-width: 275px; */
     transition: all 0.2s ease;
     height: 94.4vh;
     background-color: white;
@@ -510,14 +521,7 @@ main {
     height: 80%;
 }
 
-/* .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 50px;
-    
-   
-} */
+
 .centerpiece{
     display: flex;
     flex-direction: column;
@@ -549,9 +553,7 @@ main {
 .left{
     display: flex;
     align-items: center;
-    width: 50%;
- 
-
+    /* width: 50%; */
 }
 .right{
     display: flex;
