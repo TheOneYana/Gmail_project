@@ -110,14 +110,22 @@ function create_emails() {
         
         emailList.innerHTML += eachEmail;
     }
-
+//Search filter and display
+// function renderData(filteredData) {
+//     emailList.innerHTML = '';
+//     create_emails(filteredData);
+//     }
     
-    const starredSide1 = document.querySelectorAll(".star-true");
-    console.log("starredSide1: ", starredSide1)
-    for (let i=0; i<starredSide1.length; i++){
-        starredSide1[i].innerHTML = "star"
-    }
-    
+search.addEventListener('input', function (event) {
+    const searchKey = event.target.value;
+    const filteredData = allInbox.filter(item => {
+        return item.messageTitle.toLowerCase().includes(searchKey.toLowerCase())
+    });
+    emails = filteredData;
+    create_emails();
+    // console.log(filteredData);
+    // renderData(filteredData);
+    });
 
 
 
@@ -244,6 +252,97 @@ const icons = document.querySelectorAll('[id = sidebarIcons]');
             }
         })
     }
+
+//Sidebar mouseover effect
+sideLeft.addEventListener('mouseover', () => {
+    if (sideLeft.style.width === "73px"){
+        sideLeft.style.width ='265px';
+        smallCompose.style.display = "none";
+        bigCompose.style.display = "block";
+        displayedHp.style.display = "block";
+        displayedMp.style.display = "block";
+        footerDisp.style.display = "none";
+        footerDiv.style.display = "block";
+        }
+})
+
+sideLeft.addEventListener('mouseout', () => {
+    if (sideLeft.style.width === "265px"){
+        sideLeft.style.width = '73px';
+        smallCompose.style.display = "block";
+        bigCompose.style.display = "none";
+        displayedHp.style.display = "none";
+        displayedMp.style.display = "none";
+        footerDisp.style.display = "block";
+        footerDiv.style.display = "none";
+    }
+})
+
+// Menu button click
+    const footerDisp = document.querySelector(".footer-button");
+    const footerDiv = document.querySelector("#leftSideFooter")
+menuToggle.addEventListener('click',() =>{
+    if (sideLeft.style.width ==='265px') {
+        sideLeft.style.width = '73px';
+        smallCompose.style.display = "block";
+        bigCompose.style.display = "none";
+        displayedHp.style.display = "none";
+        displayedMp.style.display = "none";
+        footerDisp.style.display = "block";
+        footerDiv.style.display = "none";
+    } else {
+        sideLeft.style.width ='265px';
+        smallCompose.style.display = "none";
+        bigCompose.style.display = "block";
+        displayedHp.style.display = "block";
+        displayedMp.style.display = "block";
+        footerDisp.style.display = "none";
+        footerDiv.style.display = "block";
+    }
+});
+    // if ( bigCompose.style.width ==='180px') {
+    //     bigCompose.style.width = '70px';  
+    // } else {
+    //     bigCompose.style.width = '180px';
+    // }
+    // if (smallCompose.style.display = 'block') {
+    //     smallCompose.style.display = 'none'
+    // } else {
+    //     smallCompose.style.display = 'block';
+    // }
+    // if (composeP.style.visibility==='visible') {
+    //     composeP.style.visibility= 'hidden';
+    // } else {
+    //     composeP.style.visibility = 'visible';
+    // }
+    // if (displayedMp.style.visibility === 'visible') {
+    //     displayedMp.style.visibility = 'hidden';
+    // } else { 
+    //     displayedMp.style.visibility ='visible';
+    // }
+    // if (displayedHp.style.visibility === 'visible') {
+    //     displayedHp.style.visibility = 'hidden';
+    // } else { 
+    //     displayedHp.style.visibility ='visible';
+    // }
+
+
+//Header icons toggle
+supportIcon.addEventListener('click', () => {
+    supportLinks.classList.toggle('show-support');
+} )
+
+profileIcon.addEventListener('click', () => {
+   accountInfo.classList.toggle('hide-account-info');
+});
+
+appsIcon.addEventListener('click', () => {
+    googleApps.classList.toggle('hide-apps');
+})
+
+headerMiddle.addEventListener('click', () => {
+    headerMiddle.classList.toggle('search-change');
+})
 
 // previous Code
 // import { allInbox } from './all-emails.js';
