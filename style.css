@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 65px;
     width: 100vw;
     border-bottom: 1px solid whitesmoke;
     background-color: white;  
@@ -53,8 +53,8 @@ header {
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 5px;
-    height: 40px;
-    width: 500px;
+    height: 50px;
+    width: 850px;
     z-index: 15;
 }
 
@@ -114,8 +114,8 @@ header {
     position: fixed;
     top: 50px;
     right: 100px;
-    width: 20%;
-    height: 28%;
+    width: 250px;
+    height: 200px;
     background-color: white;
     display: grid;
     grid-template-rows: auto;
@@ -134,7 +134,7 @@ a#support, a {
 
 }
 
-ul.suppor-links li, ul.apps li {
+ul.support-links li, ul.apps li {
     list-style-type: none;
     padding-left: 5px;
 }
@@ -178,8 +178,8 @@ span#camera {
     position: fixed;
     top: 60px;
     right: 15px;
-    width: 28%;
-    height: 60%;
+    width: 350px;
+    height: 450px;
     border: 1px solid #e6e0e0;
     border-radius: 5px;
     text-align: center;
@@ -241,8 +241,8 @@ button[type="submit"].sign-out:hover {
     position: fixed;
     top: 60px;
     right: 15px;
-    width: 30%;
-    height: 70%;
+    width: 350px;
+    height: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: white;
@@ -468,7 +468,7 @@ border-radius: 10px;
 }
 
 div#leftSideFooter {
-    margin-top: 110px;
+    margin-top: 533px;
     height: 40px;
     width: 240px;
     display: flex;
@@ -477,6 +477,8 @@ div#leftSideFooter {
     color: white;
     text-align: center;
     border-top: 1px solid whitesmoke;
+    /* position: fixed; */
+   
 }  
 
 
@@ -543,6 +545,7 @@ main {
 
 }
 .pagenation{
+    margin-top: 19px;
     height: 50px;
     display: flex;
     align-items: center;

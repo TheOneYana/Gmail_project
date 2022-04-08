@@ -148,33 +148,33 @@ search.addEventListener('input', function (event) {
     document.querySelector('.totalSpam').innerHTML = newSpam.length;
 }
 
-const primarySection = document.querySelector('.primary');
+// const primarySection = document.querySelector('.primary');
 
-primarySection.addEventListener('click', function(){
-    pageNumber = 0;
-    emails = primary;
-    console.log(emails);
-    create_emails();
+// primarySection.addEventListener('click', function(){
+//     pageNumber = 0;
+//     emails = primary;
+//     console.log(emails);
+//     create_emails();
     
-}); 
+// }); 
 
-const socialSection = document.querySelector('.socialEmailsTop');
+// const socialSection = document.querySelector('.socialEmailsTop');
 
-socialSection.addEventListener('click', function(){
-pageNumber = 0;
-emails = social;
-console.log(emails);
-create_emails();
-});
+// socialSection.addEventListener('click', function(){
+// pageNumber = 0;
+// emails = social;
+// console.log(emails);
+// create_emails();
+// });
 
-const promotionsSection = document.querySelector('.promotionsEmailsTop');
+// const promotionsSection = document.querySelector('.promotionsEmailsTop');
 
-promotionsSection.addEventListener('click', function(){
-pageNumber = 0;
-emails = promotions;
-console.log(emails);
-create_emails();
-});
+// promotionsSection.addEventListener('click', function(){
+// pageNumber = 0;
+// emails = promotions;
+// console.log(emails);
+// create_emails();
+// });
 
 
 const icons = document.querySelectorAll('[id = sidebarIcons]');
@@ -591,22 +591,13 @@ closeBtn4.addEventListener("click", () => {
 //     composeBtn.style.width = '265px';
 //     sidebar.style.width ='265px';
 //         // emailList.getElementsByClassName.width = "700px"
-<<<<<<< HEAD
-// });
-=======
 // })
->>>>>>> d07fa1f03d6aed966b2f53fa87b9a78ce14d7b84
 
 // sidebarLinks.addEventListener('mouseout', () => {
 //     composeBtn.style.width = '50px';
 //     sidebar.style.width ='50px';
-<<<<<<< HEAD
-// // emailList.getElementsByClassName.width = "1200px"
-// });
-=======
 // emailList.getElementsByClassName.width = "1200px"
 // })
->>>>>>> d07fa1f03d6aed966b2f53fa87b9a78ce14d7b84
 // menuToggle.addEventListener('click',function () {
 // sidebar.classList.toggle('hide-sidebar');
 // });
