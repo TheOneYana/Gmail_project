@@ -101,16 +101,16 @@ function create_emails() {
         <svg class="importantEmail" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 7H7.89l3.57 5-3.57 5H15l3.55-5z" opacity=".3"/><path d="M16.63 5.84C16.27 5.33 15.67 5 15 5H4l5 7-5 6.99h11c.67 0 1.27-.32 1.63-.83L21 12l-4.37-6.16zM15 17H7.89l3.57-5-3.57-5H15l3.55 5L15 17z"/></svg>
         </div>
         <section class="sender">${email.senderEmail} </section>
-        <section class="subject">${email.messageTitle}<span class="emailContent"> - ${email.messageTitle}</span></section> 
+        <section class="subject">${email.messageTitle}<span class="emailContent"> - ${email.messages[0].message}</span></section> 
         </div>
         <div class = 'two'>
         <section class="time">${emailTime} </section>
         </div>
       </li>`
-
+        
         emailList.innerHTML += eachEmail;
     }
-    
+
     //It's click function in the middle part for the for starred icons  
     document.body.addEventListener('click', function(event){
         // console.log(event.target.document.querySelector('#starredSide'))
