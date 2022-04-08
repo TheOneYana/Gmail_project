@@ -296,6 +296,7 @@ div.more-apps {
     flex-direction: row;
     justify-content: space-around;
     padding-top: 50px;  
+  
 }
 .left-menu {
     max-width: 275px;
@@ -525,6 +526,7 @@ main {
     align-items:initial;
     width: 100%;
     background-color: rgb(128, 128, 128, 0.5);
+    padding: 0;
 
 }
 .pagenation{
@@ -779,7 +781,7 @@ fill:#fff;
 
 .centerpiece{
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100vh;
    
 }
@@ -790,8 +792,9 @@ footer{
    text-align: center;
    padding-top: 12px;
    font-size: 13px;
+   bottom: 0;
+   margin-bottom: 0;
    
-  
 }
 footer a{
     text-decoration: none;
@@ -1047,8 +1050,6 @@ input[type="checkbox"] {
     color: rgb(108, 108, 108);
     font-size: 13px;
     width: 100%;
-    
-   
     background-color: white;
     
   
