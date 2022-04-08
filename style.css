@@ -298,8 +298,19 @@ div.more-apps {
     padding-top: 50px;  
   
 }
+
+#sidebar-left {
+    flex: 0.3;
+    max-width: 265px;
+    padding-top: 15px;
+    overflow: hidden;
+    height: 200px;
+    border-bottom: 1px solid whitesmoke;
+    /* position: relative; */
+}
+
 .left-menu {
-    max-width: 275px;
+    /* max-width: 275px; */
     transition: all 0.2s ease;
     height: 94.4vh;
     background-color: white;
