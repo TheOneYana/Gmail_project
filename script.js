@@ -95,7 +95,7 @@ function create_emails() {
         <input class="email-line checkbox" type="checkbox" name="check-${email.id}" id="${email.id}"  />
         </div>
         <div class="starHover">
-        <svg class="'star" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></svg>
+        <span class="material-icons starredSide star-${email.tags.isStarred}" style="color:white">star_border</span>
         </div>
         <div class="importantHover">
         <svg class="importantEmail" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 7H7.89l3.57 5-3.57 5H15l3.55-5z" opacity=".3"/><path d="M16.63 5.84C16.27 5.33 15.67 5 15 5H4l5 7-5 6.99h11c.67 0 1.27-.32 1.63-.83L21 12l-4.37-6.16zM15 17H7.89l3.57-5-3.57-5H15l3.55 5L15 17z"/></svg>
@@ -111,6 +111,16 @@ function create_emails() {
         emailList.innerHTML += eachEmail;
     }
 
+    
+    const starredSide1 = document.querySelectorAll(".star-true");
+    console.log("starredSide1: ", starredSide1)
+    for (let i=0; i<starredSide1.length; i++){
+        starredSide1[i].innerHTML = "star"
+    }
+    
+
+
+
     //It's click function in the middle part for the for starred icons  
     document.body.addEventListener('click', function(event){
         // console.log(event.target.document.querySelector('#starredSide'))
@@ -122,12 +132,13 @@ function create_emails() {
                 starredSide.innerHTML = "star_border";
         }    
         }
-    });
+        });
     document.querySelector(".totalInbox").innerHTML = primary.length;
     document.querySelector('.totalSnum').innerHTML = social.length;
     document.querySelector('.totalPnum').innerHTML = promotions.length;
     document.querySelector('.totalSpam').innerHTML = newSpam.length;
 }
+
 
 
 const icons = document.querySelectorAll('[id = sidebarIcons]');
