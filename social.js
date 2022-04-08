@@ -1,4 +1,4 @@
-export const social = [
+export const social1 = [
   {
     tags: { isStarred: false, isTrash: false, isSpam: false },
     senderName: 'Seytech Co',
@@ -1121,3 +1121,9 @@ export const social = [
     ],
   },
 ];
+export const social = social1.map((email, index) => {
+  return{
+    id: index + 1,
+    ...email,
+  };
+});
