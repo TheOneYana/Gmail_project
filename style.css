@@ -290,7 +290,6 @@ div.more-apps {
 }
 /* Asel's CSS ends */
 
-<<<<<<< HEAD
 /* Gulya's part starts */
 .container{
     display: flex;
@@ -494,12 +493,10 @@ border-radius: 10px;
     background-color: rgb(213, 246, 238);
      color: #188038;
 }
-/* js classes starts */
+/* js classes ends */
 /* Gulya's part ends */
 
 
-=======
->>>>>>> main
 /* Uliana's CSS starts */
 
 main {
@@ -545,10 +542,14 @@ main {
 
 }
 
+.pages{
+    margin-right: 10px;
+}
+
 .left{
     display: flex;
     align-items: center;
-   width: 50%;
+    width: 50%;
  
 
 }

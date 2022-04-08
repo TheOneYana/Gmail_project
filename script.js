@@ -12,7 +12,7 @@ const displayedHp = document.querySelector("#displayedHp");
 const smallCompose = document.querySelector('.composebtn');
 const bigCompose = document.querySelector('.composebtn-displayed');
 const emailList = document.querySelector('.email-list');
-const pageInfoSpan = document.querySelector('.pagenation');
+const pageInfoSpan = document.querySelector('.pages');
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 const expanCategory = document.querySelector('#expanded-category')
@@ -35,7 +35,7 @@ const search = document.querySelector('#search');
 const sidebar =document.querySelector('.left-side-menu');
 
 let pageNumber = 0;
-let limit = 15;
+let limit = 50;
 let newStarred = allInbox.filter(em => em.tags.isStarred);
 let newSpam = allInbox.filter(em => em.tags.isSpam);
 let newTrash = allInbox.filter(em => em.tags.isTrash);
@@ -80,9 +80,7 @@ function create_emails() {
     const partialEmails = emails.slice(start, end); //[]
 
     pageInfoSpan.innerText = `${start+1}-${end} of ${emails.length}`;
-    if (emails.length < 10){
-        pageInfoSpan.innerText = `Total ${emails.length}`;
-    }
+    
     for (let email of partialEmails) {
         const emailTime = email.date.toLocaleString('en-US', {
         hour: 'numeric',
