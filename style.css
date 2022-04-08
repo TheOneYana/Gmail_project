@@ -314,13 +314,13 @@ visibility: visible;
     overflow: hidden;
     height: 200px;
     border-bottom: 1px solid whitesmoke;
-    /* position: relative; */
+    position: relative;
 }
 
 .left-menu {
     /* max-width: 275px; */
     transition: all 0.2s ease;
-    height: 94.4vh;
+    height: 100vh;
     background-color: white;
 }
 #sidebar-left{
@@ -475,20 +475,34 @@ border-radius: 10px;
     padding-left: 45px;
 }
 
-/* #leftSideFooter {
-    /* position: sticky;
-    height: 40px;
+div#leftSideFooter {
+    /* position: fixed;
     left: 0;
-    width: 100%;
-    bottom: 0;
-    position: relative;
-    position: absolute;
+    bottom: 0; */
+    height: 40px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* position: absolute; */
     overflow: hidden;
     color: white;
     text-align: center;
-    border-top: 1px solid whitesmoke; */
-    
-/* } */ 
+    border-top: 1px solid whitesmoke;
+  
+    /* transform: translate(-50%, -50%); */
+}  
+/* button.footer-button-account {
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+}
+button.footer-button-chat {
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+} */
+
 .footer-button {
     background-color: white;
     border: none;
