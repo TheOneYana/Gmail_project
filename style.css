@@ -323,7 +323,7 @@ div.more-apps {
 #compose {
     border-bottom: 1px solid whitesmoke;
     overflow: hidden;
-    height: 80px;
+    height: 86px;
 }
 .composebtn {
     background-color: white;
@@ -467,14 +467,17 @@ border-radius: 10px;
 }
 
 #leftSideFooter {
-    left: 0%;
-    position: absolute;
+    /* position: sticky;
+    height: 40px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
     position: relative;
-    bottom: -25%;
+    position: absolute;
     overflow: hidden;
     color: white;
     text-align: center;
-    border-top: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke; */
     
 }
 .footer-button {
