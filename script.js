@@ -294,17 +294,17 @@ sideLeft.addEventListener('mouseover', () => {
         }
 })
 
-sideLeft.addEventListener('mouseout', () => {
-    if (sideLeft.style.width === "265px"){
-        sideLeft.style.width = '73px';
-        smallCompose.style.display = "block";
-        bigCompose.style.display = "none";
-        displayedHp.style.display = "none";
-        displayedMp.style.display = "none";
-        footerDisp.style.display = "block";
-        footerDiv.style.display = "none";
-    }
-})
+// sideLeft.addEventListener('mouseout', () => {
+//     if (sideLeft.style.width === "265px"){
+//         sideLeft.style.width = '73px';
+//         smallCompose.style.display = "block";
+//         bigCompose.style.display = "none";
+//         displayedHp.style.display = "none";
+//         displayedMp.style.display = "none";
+//         footerDisp.style.display = "block";
+//         footerDiv.style.display = "none";
+//     }
+// })
 
 // Menu button click
     const footerDisp = document.querySelector(".footer-button");
@@ -328,32 +328,6 @@ menuToggle.addEventListener('click',() =>{
         footerDiv.style.display = "block";
     }
 });
-    // if ( bigCompose.style.width ==='180px') {
-    //     bigCompose.style.width = '70px';  
-    // } else {
-    //     bigCompose.style.width = '180px';
-    // }
-    // if (smallCompose.style.display = 'block') {
-    //     smallCompose.style.display = 'none'
-    // } else {
-    //     smallCompose.style.display = 'block';
-    // }
-    // if (composeP.style.visibility==='visible') {
-    //     composeP.style.visibility= 'hidden';
-    // } else {
-    //     composeP.style.visibility = 'visible';
-    // }
-    // if (displayedMp.style.visibility === 'visible') {
-    //     displayedMp.style.visibility = 'hidden';
-    // } else { 
-    //     displayedMp.style.visibility ='visible';
-    // }
-    // if (displayedHp.style.visibility === 'visible') {
-    //     displayedHp.style.visibility = 'hidden';
-    // } else { 
-    //     displayedHp.style.visibility ='visible';
-    // }
-
 
 //Header icons toggle
 supportIcon.addEventListener('click', () => {
@@ -617,13 +591,22 @@ closeBtn4.addEventListener("click", () => {
 //     composeBtn.style.width = '265px';
 //     sidebar.style.width ='265px';
 //         // emailList.getElementsByClassName.width = "700px"
+<<<<<<< HEAD
 // });
+=======
+// })
+>>>>>>> d07fa1f03d6aed966b2f53fa87b9a78ce14d7b84
 
 // sidebarLinks.addEventListener('mouseout', () => {
 //     composeBtn.style.width = '50px';
 //     sidebar.style.width ='50px';
+<<<<<<< HEAD
 // // emailList.getElementsByClassName.width = "1200px"
 // });
+=======
+// emailList.getElementsByClassName.width = "1200px"
+// })
+>>>>>>> d07fa1f03d6aed966b2f53fa87b9a78ce14d7b84
 // menuToggle.addEventListener('click',function () {
 // sidebar.classList.toggle('hide-sidebar');
 // });
