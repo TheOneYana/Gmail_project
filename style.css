@@ -702,3 +702,399 @@ input[type="checkbox"] {
 }
 /* rgba(231, 228, 228, 0.807) */
 /* Uliana's CSS ends */
+
+
+
+
+/* Aimana's Css */
+
+
+
+ .right-side-menu {
+    background-color: white;
+    height: 94.5vh;
+    width: 100px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 15px;
+   
+  
+} 
+.second-menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.iconify{
+    font-size:20px;
+ } 
+ .iconify:hover {
+    /* border-radius: 10px; */
+    /* background-color:rgb(156, 155, 155) ; */
+} 
+
+.icon-text{
+    display: none;
+}  
+.main-icon:hover + .icon-text {
+    display: block;
+    font-size: 13px;
+    border: 1px solid rgb(97, 96, 96);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: .7;
+}
+#keep{
+    padding: 25px;
+}
+#contacts{
+    padding: 25px;
+}
+
+.small-hr{
+    width: 50%;
+    margin-left: 30%;
+}
+
+#tasks{
+   color: blue;
+}  
+
+#add{
+ padding: 25px;
+}
+/* first pop */
+.popup {
+    display: none;
+    width: 29%;
+    height: 100vh;
+    background-color: rgb(248, 248, 248);
+    margin-top: 50px;
+    padding: 10px;
+}
+.calendar1-text{
+    color: blue;
+}
+.first-text-blue{
+   color: rgb(21, 21, 248);
+}
+.first-in-new{
+    position: absolute;
+    right:40px;
+    top: 75px;
+    
+}
+.arrow-down-first{
+    /* position: absolute;
+    right: 10px;
+    top: 90px; */
+    display: inline;
+}
+
+ .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 73px;
+    font-size: larger;
+} 
+/* #longLine{
+    width: 100%;
+} */
+hr{
+    width: 100%;
+}
+.tab{
+    position: absolute;
+    right: 50px;
+    top: 74px;
+}
+#textCalendar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(107, 106, 106);
+}
+
+.arrow{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  
+  }
+    .arrow {
+        position: absolute;
+        right: 110px;
+        bottom: 86.4%;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 2px;
+      }
+      /* ------ */
+
+      .second-popup {
+        display: none;
+        width: 29%;
+        height: 100vh;
+        background-color:white;
+        margin-top: 50px;
+        padding: 9px;
+        border: 1px solid rgb(234, 232, 232);
+
+    } 
+    h2{
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: large;
+    }
+    .middle-notestext{
+         text-align: center;
+    }
+    
+    #textKeep{
+        color: rgb(107, 106, 106);
+    }
+    .textNotes{
+        color: rgb(72, 72, 72);
+    }
+    .header-text2{
+         display: flex; 
+         margin: 5px 0;
+    }
+    .line-keep{
+        margin-top: 10px;
+        color: rgb(236, 233, 233);
+    }
+    .tab-in-new{
+        position: absolute;
+        right: 50px;
+        
+    }
+    .search{
+        position: absolute;
+        right: 90px;
+        top: 72px;
+    }
+    /* .iconify:hover{
+        background-color: rgb(239, 237, 237);
+        height: 20px;
+        border-radius:20px;
+    } */
+   
+  .close-btn2{
+        position: absolute;
+        right: 20px;
+        top: 75px;
+        font-size:25px ;
+        color: rgb(138, 137, 137);
+    }  
+    .takeNote{
+        display: flex;
+        padding-top:15px; 
+    }
+    #task-sign{
+        position: absolute;
+        right: 10px;
+
+    }
+    .iconify{
+        font-size: 20px;
+    }
+    .folder-img{
+        margin: 50px 50px;
+        border: 1px solid rgb(236, 236, 168);
+        border-radius: 60px;
+        background-color: rgb(241, 232, 202);
+     }
+     .content-note{
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .no-notes{
+        text-align: center;
+    }
+    .no-notes-text-down{
+         margin-top: 10px;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .note-icon{
+        margin-top: 20px; 
+    }
+
+  
+
+
+
+    /* .web-app{
+        padding-top: 20px;
+        padding-right: 35px;
+        display: inline-block;
+    }
+    .chrome{
+      padding-top: 30px;
+      padding-left: 20px;
+    }
+    .ios{
+        padding-left: 9px ;
+        padding-top: 10px;
+    }
+    */
+     
+    /* #add-sign{
+        color: yellow;
+    } */
+    
+
+    .third-popup {
+        display: none;
+        width: 29%;
+        height: 100vh;
+        background-color: white;
+        margin-top: 50px;
+        border: 1px solid rgb(234, 232, 232);
+        color: rgb(107, 106, 106);
+    } 
+     #longLine2{
+        width: 100%;
+     }
+    .task-header{
+        margin: 13px;
+    }
+    .three-dots{
+        position: absolute;
+        right: 20px;
+        top: 117px;
+    }
+    .task-center-text{
+        position: absolute;
+        bottom: 45%;
+        text-align: center;
+    }
+    .text2-tasks{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #262626;
+        font-size: small;
+    }
+    hr{
+        width: 100%;
+    }
+    .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+        right: 10px;
+        bottom: 28px;
+        border-bottom: 5px solid black;
+      }
+     .content-contacts{
+          text-align: center;
+     }
+
+      .completed{
+          position: absolute;
+          bottom: 20px;
+      }
+    .close-btn3{
+        position: absolute;
+        right: 20px;
+        top: 76px;
+        font-size: larger;
+    }  
+    .adding-tasks{
+        display: flex;
+        padding-top: 10px;
+        color: blue;
+        font-size: 14px;
+    }
+    .space-add{
+        margin: 0 15px;
+    }
+    
+    .fourth-popup {
+        display: none;
+        width: 29%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        margin-top: 50px;
+        border: 1px solid rgb(234, 232, 232);
+    } 
+   .header-text4{
+      margin: 5px 10px;
+   }
+   .search4{
+       position: absolute;
+       right: 80px;
+       top: 79px;
+   }
+   .tab-in-new4{
+    position: absolute;
+    right: 40px;
+    top: 79px;
+   }
+   .text1-contact{
+       padding-top: 5px;
+   }
+   
+
+  .close-btn4{
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        font-size: 20px;
+    }  
+    .btn{
+       margin-top:20px;
+    }
+    button{
+       border: none;
+       border-radius: 5px;
+       padding: 10px;
+       width: 50%;
+       background-color: rgb(55, 81, 227);
+       color: white;
+    }
+
+    /* .content-note{
+        text-align: center;
+       
+    } */
+    
+    .content1-contacts{
+        text-align: center;
+        padding-top: 110px;
+    }
+
+    .content2-contacts{
+       padding-top: 20px;
+    }
+    .make-down{
+        padding-top:20px ;
+    }
+  /* .fifth-popup {
+        display: none;
+        width: 30%;
+        height: 100vh;
+        background-color: rgb(59, 245, 245);
+        margin-top: 50px;
+    } 
+
+  .close-btn5{
+        position: absolute;
+        right: 20px;
+    }    */
+
+   
+   
+   
+
+/* .main-icon{
+    margin: 30px;
+} */
+
+ 
+
+
