@@ -18,6 +18,13 @@
   <body>
     <main>
         
+
+
+
+
+      
+
+
       <!-- ASELS's section starts -->
       <header class="header-container">
         <div class="header-left">
@@ -550,13 +557,13 @@
                       <!-- Uliana's section ends -->
 
         <!-- Aimana's section starts -->
-            <section class="right-side-menu">
+            <!-- <section class="right-side-menu">
                 <button>Calendar</button>
-                </section>
+                </section> -->
             <!-- Aimana's section ends -->
     
-            </div>
-          </div>
+            <!-- </div> -->
+          <!-- </div> -->
 
 
 <!--         
@@ -689,9 +696,210 @@
                
             </div> -->
             
+            </footer>
+          </section>
+        </section>
+        <!-- Uliana's section ends -->
+
+
+
+
+      <!-- Aimana's section starts -->
+
+
+        <section class="right-side-menu">
+         <div class="second-menu"></div>
+
+           <div  id="calendar" class="main-icon"><span  class="iconify" data-icon="logos:google-calendar"></span>
+             </div><p class="icon-text calendar-text">Calendar</p> 
+              
+           <div id="keep" class="main-icon"> <span  class="iconify" data-icon="logos:google-keep"></span></div>
+           <p class="icon-text">Keep</p>
+
+
+           <div  id="tasks"  class="main-icon" ><span class="iconify" data-icon="ic:round-task-alt" style="color: blue;"></span></div>
+           <p class="icon-text">Tasks</p>
+           <div id="contacts" class="main-icon"> <span  class="iconify" data-icon="arcticons:contacts-alt"></span></div>
+           <p class="icon-text">Contacts</p>
+       
+           <hr class="small-hr"/>
+       
+           <div id="add" class="main-icon" > <span class="iconify" data-icon="carbon:add"></span> </div>
+           <p class="icon-text"> Get add ons</p>
+        </section>  
+                 
+        <div class="popup">
+            <div class="popup-overlay">
+              <div class="calendar-popup">
+                <div class="popup-content">
+                  <div class="header-text">
+                    <h5 id="textCalendar">Calendar</h5>
+                    <p class="first-text-blue">Wed,6 Apr</p>
+                    <!-- <div class="arrow-down-first"> <i class="arrow down"></i></div> -->
+   
+                   <div class="first-in-new"><span class="iconify" data-icon="ic:baseline-open-in-new" style="color: gray;"></span></div> 
+                    <!-- <span class="material-icons-outlined">
+                        open_in_new
+                        </span> -->
+                    <span class="close-btn">&times;</span>
+                  </div>
+                  <hr />
+                  <!-- id="longLine -->
+                  
+                </div>
+                <p class="calendar1-text"> Today</p>
+                
+              </div>
+            
+             
+            </div> 
+           
+          </div>
+       
+         
+
+           <div class="second-popup">
+              <div class="keep-popup">
+                    <h5 id="textKeep">Keep</h5>
+                  <div class="header-text2">
+                      <p class="textNotes">Notes</p>
+                     
+                    <div class="search"><span class="iconify" data-icon="carbon:search" style="color: gray;" data-width="20" data-height="40"></span></span></div>
+                    <div class="tab-in-new"><a href="https://keep.google.com/u/0/"><span class="iconify" data-icon="ic:baseline-open-in-new" style="color: gray;"></span></a></div>
+                    <span class="close-btn2">&times;</span> 
+                     
+                  </div>
+                   <hr class="line-keep"/>
+                  <div class="takeNote">
+                    <div id="add-sign"><span class="iconify" data-icon="carbon:add" style="color: gray;" data-width="20"></span></div>
+                     <p>Take a note...</p>
+                     <div id="task-sign"><span class="iconify" data-icon="octicon:tasklist-16" style="color: gray;" data-width="20"></span></div>
+                  </div>
+
+                  <div class="folder-img"><span class="iconify" data-icon="flat-color-icons:opened-folder" style="color: rgb(228, 216, 50); font-size: 120px;"></span></div>
+                  <div class="no-notes">
+                    <h2>No notes yet </h2>
+                    <h5 class="no-notes-text-down">Your notes from Google Keep will appear here</h5>
+                  </div>
+                  
+
+                  <div class="content-note">
+                    
+                    <div class="android" class="note-icon"> <span  class="iconify" data-icon="ant-design:android-filled" style="color: gold; font-size: 25px;"></span>
+                      <a href="https://play.google.com/store/apps/details?id=com.google.android.keep">Android devices</a> </div>  
+                    
+                    <div class="ios" class="note-icon"><span class="iconify" data-icon="mdi:apple-ios" style="color: gold; font-size: 25px;"> </span> <a href="https://apps.apple.com/app/id1029207872">iPhone and iPad</a></div>
+                    
+                     <div class="web-app" class="note-icon"><span class="iconify" data-icon="ic:baseline-web" style="color: gold; font-size: 25px;"></span><a href="https://keep.google.com/u/0/"> Web App </a> </div>
+                     <div class="chrome" class="note-icon"><span class="iconify" data-icon="fa6-brands:snapchat-square" style="color: gold; font-size: 25px;"></span> <a href="https://chrome.google.com/webstore/detail/google-keep-chrome-extens/lpcaedmchfhocbbap">Chrome extension</a></div>
+                    
+
+                   
+                  </div>
+               
+              </div>
+            
+          </div> 
+         
+
+           <div class="third-popup">
+            <div class="popup-overlay">
+              <div class="tasks-popup">
+                <div class="popup-content">
+                  <div class="header-text3">
+                    <div class="task-header">
+                    <h5 class="text-task">Tasks</h5>
+
+                    <p>My tasks</p>
+                  </div>
+                    <i class="arrow down"></i>
+                    <span class="close-btn3">&times;</span>
+                    <hr id="longLine2">
+                   
+                  <div class="adding-tasks">
+                    <span class="iconify" data-icon="ic:round-add-task" style="color: blue;"></span>
+                    <p class="space-add">Add a task</p> 
+                    <div class="three-dots"><span class="iconify" data-icon="bi:three-dots-vertical" style="color: rgb(87, 87, 87);" data-width="15" data-height="30"></span></div>
+                  </div>
+                  <img src="" alt="">
+                   <div class="task-center-text">
+                    <p>Nicely done!</p>
+                    <p class="text2-tasks">You've finished all your tasks. Take a second to recharge</p>
+                  </div>
+                  <div class="completed">
+                    <hr>
+                    <p>Completed(9)</p>
+        
+                   <p>Up arrow: <i class="arrow up"></i></p> -->
+                  </div>
+                  <div class="arrow-up"></div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>  
+     
+          
+<!--          
+          <div class="fifth-popup">
+            <div class="popup-overlay">
+              <div class="add-popup">
+                <div class="popup-content">
+                  <div class="header-text">
+                    <p>Hi Hi GIgcjh </p>
+                    <span class="close-btn5">&times;</span>
+                    <hr>
+                    <h6>GMT-07</h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  -->
+
+        </div>
+
+        <div class="fourth-popup">
+          <div class="popup-overlay">
+            <div class="contact-popup">
+              <div class="popup-content">
+                
+                <div class="header-text4">
+                  <h5 class="text1-contact">Contacts</h5>
+                  <p class="textNotes">Contacts</p>
+                  <div class="search4"><span  class="iconify" data-icon="carbon:search" style="color: gray;"></span></div>
+                  <div class="tab-in-new4"><span class="iconify" data-icon="ic:baseline-open-in-new" style="color: gray;"></span></div>
+                  <span class="close-btn4">&times;</span> 
+                </div>
+
+                <hr>
+                 <div class="content1-contacts">
+               <img src="https://png.pngtree.com/png-vector/20190110/ourlarge/pngtree-vector-laptop-icon-png-image_312671.jpg" width="80%" alt="">
+
+                   <div class="content2-contacts">
+                          <p>No Contacts yet</p>
+                          <h5 class="make-down">Google Contacts makes your contacts organised and clutter-free so that you never lose touch
+                          </h5>
+                          <div class="btn-side-bar">
+                          <button><a href="https://contacts.google.com/u/0?hl=en_GB">Get started</a> </button>
+                        </div>
+                   </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </main> 
+    </div>
+        
+      <!-- Aimana's section ends -->
 
     </main>
 
     <script type="module" src="script.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   </body>
 </html>
