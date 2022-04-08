@@ -148,6 +148,33 @@ search.addEventListener('input', function (event) {
     document.querySelector('.totalSpam').innerHTML = newSpam.length;
 }
 
+const primarySection = document.querySelector('.primary');
+
+primarySection.addEventListener('click', function(){
+    pageNumber = 0;
+    emails = primary;
+    console.log(emails);
+    create_emails();
+    
+}); 
+
+const socialSection = document.querySelector('.socialEmailsTop');
+
+socialSection.addEventListener('click', function(){
+pageNumber = 0;
+emails = social;
+console.log(emails);
+create_emails();
+});
+
+const promotionsSection = document.querySelector('.promotionsEmailsTop');
+
+promotionsSection.addEventListener('click', function(){
+pageNumber = 0;
+emails = promotions;
+console.log(emails);
+create_emails();
+});
 
 
 const icons = document.querySelectorAll('[id = sidebarIcons]');
@@ -586,17 +613,17 @@ closeBtn4.addEventListener("click", () => {
 // closeBtn5.addEventListener("click", () => {
 //     fifth_popup.style.display = "none";
 
-sidebarLinks.addEventListener('mouseover', () => {
-    composeBtn.style.width = '265px';
-    sidebar.style.width ='265px';
-        // emailList.getElementsByClassName.width = "700px"
-})
+// sidebarLinks.addEventListener('mouseover', () => {
+//     composeBtn.style.width = '265px';
+//     sidebar.style.width ='265px';
+//         // emailList.getElementsByClassName.width = "700px"
+// });
 
-sidebarLinks.addEventListener('mouseout', () => {
-    composeBtn.style.width = '50px';
-    sidebar.style.width ='50px';
-// emailList.getElementsByClassName.width = "1200px"
-})
+// sidebarLinks.addEventListener('mouseout', () => {
+//     composeBtn.style.width = '50px';
+//     sidebar.style.width ='50px';
+// // emailList.getElementsByClassName.width = "1200px"
+// });
 // menuToggle.addEventListener('click',function () {
 // sidebar.classList.toggle('hide-sidebar');
 // });
