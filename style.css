@@ -1031,10 +1031,10 @@ input[type="checkbox"] {
 .iconify{
     font-size:20px;
  } 
- .iconify:hover {
+ /* .iconify:hover {
     /* border-radius: 10px; */
     /* background-color:rgb(156, 155, 155) ; */
-} 
+/* }  */ 
 
 .icon-text{
     display: none;
