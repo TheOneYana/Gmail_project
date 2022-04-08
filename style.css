@@ -308,6 +308,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
    padding-top: 50px;
+   width: 100%;
     
    
 }
@@ -321,32 +322,34 @@ main {
     
 }
 .pagenation{
-    background-color: none;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;  
-    color: white;
+    color: rgb(108, 108, 108);
     font-size: 13px;
     padding-right: 15px;
-    position: fixed;
-    width: 83vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    position: sticky;
+   top: 0;
+    
+    
+    width: 100%;
+    background-color: white;
 
 }
 
 .left{
     display: flex;
     align-items: center;
-   width: 50%;
+}
+
+  
  
 
-}
+
 .right{
     display: flex;
     align-items: center;
-    width: 50%;
     justify-content: end;
 
 }
@@ -513,12 +516,19 @@ fill:#fff;
     width: 18px;
     margin: 0 10px;
 }
+.arrow_right{
+    fill: grey;
+}
 .arrow_left{
     fill:rgb(178, 176, 176);
 }
 .input_tools{
     width: 20px;
     margin-left: 8px;
+    
+}
+.input_tools{
+    fill: gray;
 }
 .arrow_drop_down_right{
     margin-right: 3px;
@@ -529,7 +539,8 @@ fill:#fff;
     display: flex;
     border-bottom: 2px solid gray;
     box-shadow: 0 2px 4px #262626;
-    margin-top: 50px;
+  
+    width: 100%;
 }
 .p-s-p section {
    background-color: none;
@@ -564,11 +575,12 @@ fill:#fff;
 }
 footer{
     height: 65px;
-    background-color: black;     
+    background-color: rgb(110, 109, 109);     
    color: white;
    text-align: center;
    padding-top: 12px;
    font-size: 13px;
+   
   
 }
 footer a{
@@ -579,11 +591,49 @@ footer a{
 }
 .footerOne{
     display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 .footerTwo{
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+   
 }
+.footerTwo svg {
+    height: 19px;
+}
+.footerLinks{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.bar{
+    display: flex;
+    align-items: center;
+}
+.barleft{
+    width: 150px;
+    height: 7px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 6px;
+    z-index: 2;
+    /* border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px; */
+}
+.barright{
+    width:80px;
+    height: 7px;
+    border: 1px solid rgb(183, 182, 182);
+    background-color: rgb(179, 179, 179);
+    margin-left: -5px;
+    border-radius: 6px;
+}
+
 
 .left-side-menu{
     background-color: bisque;
@@ -711,12 +761,13 @@ input[type="checkbox"] {
     
 }
 .time{
-    width: 60px;
+    width: 30px;
     margin-left: 40px;
     font-size: 13px;
-    margin-right: 10px;
-    right: 60px;
+    margin-right: 12px;
     overflow-x: hidden;
+    display: flex;
+    justify-content: end;
   
 }
 .drag{
@@ -731,3 +782,231 @@ input[type="checkbox"] {
 /* rgba(231, 228, 228, 0.807) */
 /* Uliana's CSS ends */
 
+.openEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   padding-top: 50px;
+   width: 100%;
+    background-color: #fff;
+   
+}
+.Three {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+}
+.pagenationTwo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    padding-right: 15px;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   background-color: white;
+}
+.pagenationTwo svg{
+    fill: rgb(192, 191, 191);
+}
+.leftEmail{
+    display: flex;
+    align-items: center;
+}
+.Hover{
+    width:35px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.oneOf, .twoOf{
+    border-right: 1px solid rgb(247, 246, 246);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.emailHeader{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    width: 100%;
+    
+   
+    background-color: white;
+    
+  
+}
+.leftSide{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.rightSide{
+    display: flex;
+    align-items: center;
+}
+.emailSubject{
+    display: flex;
+    align-items: row;
+    width: 50vw;
+   white-space: nowrap;
+   font-size: 20px;
+   margin-left: 77px;
+}
+.importantThree{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    margin-left: 20px;
+    width: 50%;
+    height:24px;
+}
+.removeLabel{
+    height: 20px;
+    width: 20px;
+    fill: gray;
+}
+.removeLabel.Hover{
+    height: 25.3px;
+    display: flex;
+    align-items: center;
+    width: 15px;
+    margin-left: 0px;
+    border: 1px solid gainsboro;
+    background-color: gainsboro;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.inbox{
+    font-size: 16px;
+}
+.inbox.Hover{
+    margin-right: 0px;
+    border: 1px solid gainsboro;
+    width: 50px;
+    padding: 2px;
+    background-color: gainsboro;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.importantLabel{
+    fill:rgb(123, 122, 122)
+    
+}
+.emailHeader svg{
+    fill: grey;
+}
+.emailSender{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    color: rgb(108, 108, 108);
+    font-size: 13px;
+    width: 100%;
+
+    background-color: white;
+}
+.emailSender svg{
+    fill: gray;
+}
+.leftPart{
+    display: flex;
+    align-items: center;
+
+}
+.rightPart{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    justify-content: end;
+}
+.rightSide .Hover{
+    width: 20px;
+    
+}
+.rightSide{
+    margin-right: 10px;
+}
+.emailText{
+    width: 76.7vw;
+    width: 90%;
+    width: calc(100% - 100px);
+    margin-left: 76px;
+    background-color: rgb(208, 208, 208);
+    margin-bottom: 35px;
+}
+.toMe{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+.toMe svg{
+    width: 20px;
+}
+.arrowB{
+    border: 1px solid rgb(182, 179, 179);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: gainsboro;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.senderIcon{
+   margin-left: 10px;
+   margin-right: 7px;
+}
+.senderEmail{
+    margin-left: 10px;
+}
+.Hover.toMe{
+    margin: 0;
+}
+.time{
+    white-space: nowrap;
+    width: 130px;
+}
+.emailTextAndButtons{
+    background-color: #fff;
+}
+.buttonsInEmail{
+    padding-bottom: 40px;
+    margin-left: 75px;
+    width: 300px;
+
+    
+}
+.buttonsInEmail button{
+    padding: 0;
+    margin-right: 10px;
+
+
+}
+.buttonsEmail{
+   width: 110px;
+   height: 40px;
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   background-color: white;
+   padding: 0;
+ 
+  
+
+}
+.buttonsEmail svg{
+    fill: rgb(65, 64, 64);
+    margin-right: 10px;
+    margin-left: 10px;
+}
