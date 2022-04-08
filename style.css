@@ -298,10 +298,21 @@ div.more-apps {
     padding-top: 50px;  
   
 }
+
+#sidebar-left {
+    flex: 0.3;
+    max-width: 265px;
+    padding-top: 15px;
+    overflow: hidden;
+    height: 200px;
+    border-bottom: 1px solid whitesmoke;
+    position: relative;
+}
+
 .left-menu {
     max-width: 275px;
     transition: all 0.2s ease;
-    height: 94.4vh;
+    height: 100vh;
     background-color: white;
 }
 #sidebar-left{
@@ -456,17 +467,34 @@ border-radius: 10px;
     padding-left: 45px;
 }
 
-#leftSideFooter {
-    left: 0%;
-    position: absolute;
-    position: relative;
-    bottom: -25%;
+div#leftSideFooter {
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    height: 40px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* position: absolute; */
     overflow: hidden;
     color: white;
     text-align: center;
     border-top: 1px solid whitesmoke;
-    
+  
+    /* transform: translate(-50%, -50%); */
+}  
+/* button.footer-button-account {
+    position: fixed;
+    left: 20px;
+    bottom: 0;
 }
+button.footer-button-chat {
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+} */
+
 .footer-button {
     background-color: white;
     border: none;
