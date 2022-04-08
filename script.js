@@ -45,6 +45,7 @@ let emails = allInbox;  // My Hero  line!!!
 
     create_emails()
 
+
 prevBtn.addEventListener('click', function () {
     emailList.innerHTML = '';
     pageNumber--;
@@ -111,15 +112,27 @@ function create_emails() {
         emailList.innerHTML += eachEmail;
     }
 
-    
-    const starredSide1 = document.querySelectorAll(".star-true");
-    console.log("starredSide1: ", starredSide1)
-    for (let i=0; i<starredSide1.length; i++){
-        starredSide1[i].innerHTML = "star"
+function renderData(filteredData) {
+    emailList.innerHTML = '';
+    create_emails(filteredData);
     }
     
+search.addEventListener('input', function (event) {
+    const searchKey = event.target.value;
+    const filteredData = allInbox.filter(item => {
+        return item.messageTitle.toLowerCase().includes(searchKey.toLowerCase())
+    });
+    console.log(filteredData);
+    renderData(filteredData);
+    });
 
 
+const starredSide1 = document.querySelectorAll(".star-true");
+console.log("starredSide1: ", starredSide1)
+for (let i=0; i<starredSide1.length; i++){
+    starredSide1[i].innerHTML = "star"
+}
+    
 
     //It's click function in the middle part for the for starred icons  
     document.body.addEventListener('click', function(event){
@@ -314,11 +327,32 @@ const icons = document.querySelectorAll('[id = sidebarIcons]');
 
 
 menuToggle.addEventListener('click',() =>{
-    if (sidebar.style.width ==='265px') {
-        sidebar.style.width = '50px';
+    if (sideLeft.style.width ==='265px') {
+        sideLeft.style.width = '75px';
     } else {
-        sidebar.style.width ='265px';
+        sideLeft.style.width ='265px';
     }
+    if ( bigCompose.style.width ==='180px') {
+        bigCompose.style.width = '70px';
+    } else {
+        bigCompose.style.width = '180px';
+    }
+    if (composeP.style.visibility==='visible') {
+        composeP.style.visibility= 'hidden';
+    } else {
+        composeP.style.visibility = 'visible';
+    }
+    if (displayedMp.style.visibility === 'visible') {
+        displayedMp.style.visibility = 'hidden';
+    } else { 
+        displayedMp.style.visibility ='visible';
+    }
+    if (displayedHp.style.visibility === 'visible') {
+        displayedHp.style.visibility = 'hidden';
+    } else { 
+        displayedHp.style.visibility ='visible';
+    }
+
 })
 
 supportIcon.addEventListener('click', () => {
@@ -337,19 +371,7 @@ headerMiddle.addEventListener('click', () => {
     headerMiddle.classList.toggle('search-change');
 })
 
-function renderData(filteredData) {
-    emailList.innerHTML = '';
-    createEmail(filteredData);
-    }
-    
-search.addEventListener('input', function (event) {
-    const searchKey = event.target.value;
-    const filteredData = allInbox.filter(item => {
-        return item.messageTitle.toLowerCase().includes(searchKey.toLowerCase())
-    });
-    console.log(filteredData);
-    renderData(filteredData);
-    });
+
     
 
 //Pagination. Uliana's part is needed to select buttons
@@ -421,23 +443,32 @@ search.addEventListener('input', function (event) {
 // })
 
 //Tried to make Gulya's part work.
-const composeBtn = document.querySelector('.compose');
+// const composeBtn = document.querySelector('.compose');
 // composeBtn.addEventListener('mouseout', function(event) {
 //     sidebarLinks.style.width = '265px';
 //     console.log('hello')
 // }, true);
+const sidebarLeft=document.querySelector('#sidebar-left');
+const composeDiv=document.querySelector('#compose');
+const composeP=document.querySelector('.compose-p');
 
-sidebarLinks.addEventListener('mouseover', () => {
-    composeBtn.style.width = '265px';
-    sidebar.style.width ='265px';
-        // emailList.getElementsByClassName.width = "700px"
+sideLeft.addEventListener('mouseover', () => {
+    bigCompose.style.width = '180px';
+    sideLeft.style.width ='265px';
+    composeP.style.visibility='visible';
+    displayedMp.style.visibility='visible'; 
+    displayedHp.style.visibility = 'visible';  
 })
 
-sidebarLinks.addEventListener('mouseout', () => {
-    composeBtn.style.width = '50px';
-    sidebar.style.width ='50px';
-// emailList.getElementsByClassName.width = "1200px"
+sideLeft.addEventListener('mouseout', () => {
+    bigCompose.style.width = '70px';
+    sideLeft.style.width ='75px';
+    composeP.style.visibility = 'hidden';
+    displayedMp.style.visibility ='hidden';
+    displayedHp.style.visibility = 'hidden';
 })
+
+
 // menuToggle.addEventListener('click',function () {
 // sidebar.classList.toggle('hide-sidebar');
 // });
