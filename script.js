@@ -7,6 +7,7 @@ import { social } from './social.js';
 const allInbox = [...primary, ...social, ...promotions];
 const menu = document.querySelector('#menu');
 const sideLeft = document.querySelector('#hover-left');
+
 const displayedMp = document.querySelector("#displayedMp");
 const displayedHp = document.querySelector("#displayedHp");
 const smallCompose = document.querySelector('.composebtn');
@@ -412,44 +413,43 @@ headerMiddle.addEventListener('click', () => {
 // const search = document.querySelector('#search');
 
 
-menuToggle.addEventListener('click',() =>{
-    if (sidebar.style.width ==='265px') {
-        sidebar.style.width = '50px';
-    } else {
-        sidebar.style.width ='265px';
-    }
-})
+// menuToggle.addEventListener('click',() =>{
+//     if (sidebar.style.width ==='265px') {
+//         sidebar.style.width = '50px';
+//     } else {
+//         sidebar.style.width ='265px';
+//     }
+// }) 
 
-supportIcon.addEventListener('click', () => {
-    supportLinks.classList.toggle('show-support');
-} )
+// supportIcon.addEventListener("click", () => {
+//   supportLinks.classList.toggle("show-support");
+// });
 
-profileIcon.addEventListener('click', () => {
-   accountInfo.classList.toggle('hide-account-info');
-});
+// profileIcon.addEventListener("click", () => {
+//   accountInfo.classList.toggle("hide-account-info");
+// });
 
-appsIcon.addEventListener('click', () => {
-    googleApps.classList.toggle('hide-apps');
-})
+// appsIcon.addEventListener("click", () => {
+//   googleApps.classList.toggle("hide-apps");
+// });
 
-headerMiddle.addEventListener('click', () => {
-    headerMiddle.classList.toggle('search-change');
-})
+// headerMiddle.addEventListener("click", () => {
+//   headerMiddle.classList.toggle("search-change");
+// });
 
-function renderData(filteredData) {
-    emailList.innerHTML = '';
-    createEmail(filteredData);
-    }
-    
-search.addEventListener('input', function (event) {
-    const searchKey = event.target.value;
-    const filteredData = allInbox.filter(item => {
-        return item.messageTitle.toLowerCase().includes(searchKey.toLowerCase())
-    });
-    console.log(filteredData);
-    renderData(filteredData);
-    });
-    
+// function renderData(filteredData) {
+//   emailList.innerHTML = "";
+//   createEmail(filteredData);
+// }
+
+// search.addEventListener("input", function (event) {
+//   const searchKey = event.target.value;
+//   const filteredData = allInbox.filter((item) => {
+//     return item.messageTitle.toLowerCase().includes(searchKey.toLowerCase());
+//   });
+//   console.log(filteredData);
+//   renderData(filteredData);
+// });
 
 //Pagination. Uliana's part is needed to select buttons
 // const pageInfoSpan = document.querySelector('#page-info');
@@ -461,29 +461,29 @@ search.addEventListener('input', function (event) {
 // let limit = 15;
 
 // function createEmails(emails) {
-    // spinnerDiv.style.display ='block'
+// spinnerDiv.style.display ='block'
 //console.log(Math.floor(emails.length/limit));  5
 // console.log(pageNumber);
 
-    // if(pageNumber<= 0) {
-    //     prevBtn.disabled = true;
-    // } else {
-    //     prevBtn.disabled = false;
-    // }
+// if(pageNumber<= 0) {
+//     prevBtn.disabled = true;
+// } else {
+//     prevBtn.disabled = false;
+// }
 
-    // const lastPage = Math.floor(emails.length/limit);
-    // if(pageNumber===lastPage) {
-    //     nextBtn.disabled =true;
-    // } else {
-    //     nextBtn.disabled = false;
-    // }
+// const lastPage = Math.floor(emails.length/limit);
+// if(pageNumber===lastPage) {
+//     nextBtn.disabled =true;
+// } else {
+//     nextBtn.disabled = false;
+// }
 
-    // const start = pageNumber * limit; //0, 15,30
-    // const end = (pageNumber +1) * limit;//15, 30, 45
+// const start = pageNumber * limit; //0, 15,30
+// const end = (pageNumber +1) * limit;//15, 30, 45
 
-    // const partialEmails= emails.slice(start, end);//[]
+// const partialEmails= emails.slice(start, end);//[]
 
-    // pageInfoSpan.innerText = `${start} - ${end} of ${emails.length}`;
+// pageInfoSpan.innerText = `${start} - ${end} of ${emails.length}`;
 //     for (let email of emails) {
 //         const eachEmail = `<li id="${email.id}" class="email-item">
 //         <input type="checkbox" name="check-${email.id}" id=${email.id}>
@@ -525,6 +525,66 @@ const composeBtn = document.querySelector('.compose');
 //     sidebarLinks.style.width = '265px';
 //     console.log('hello')
 // }, true);
+
+
+
+
+// Aimana's Part
+
+const closeBtn = document.querySelector(".close-btn");
+const popup = document.querySelector(".popup");
+const calendarPopup = document.querySelector(".calendar-popup");
+
+calendar.addEventListener("click", () => {
+  popup.style.display = "flex";
+});
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+const second_popup = document.querySelector(".second-popup");
+const closeBtn2 = document.querySelector(".close-btn2");
+const keepPopup = document.querySelector(".keep-popup");
+
+keep.addEventListener("click", () => {
+  second_popup.style.display = "flex";
+});
+closeBtn2.addEventListener("click", () => {
+  second_popup.style.display = "none";
+});
+
+
+const third_popup = document.querySelector(".third-popup");
+const closeBtn3 = document.querySelector(".close-btn3");
+const taskPopup = document.querySelector(".task-popup");
+
+tasks.addEventListener("click", () => {
+    third_popup.style.display = "flex";
+});
+closeBtn3.addEventListener("click", () => {
+    third_popup.style.display = "none";
+});
+
+const fourth_popup = document.querySelector(".fourth-popup");
+const closeBtn4 = document.querySelector(".close-btn4");
+const contactPopup = document.querySelector(".calendar-popup");
+
+contacts.addEventListener("click", () => {
+    fourth_popup.style.display = "flex";
+});
+closeBtn4.addEventListener("click", () => {
+    fourth_popup.style.display = "none";
+});
+
+// const fifth_popup = document.querySelector(".fifth-popup");
+// const closeBtn5 = document.querySelector(".close-btn5");
+// const addPopup = document.querySelector(".add-popup");
+
+// add.addEventListener("click", () => {
+//     fifth_popup.style.display = "flex";
+// });
+// closeBtn5.addEventListener("click", () => {
+//     fifth_popup.style.display = "none";
 
 sidebarLinks.addEventListener('mouseover', () => {
     composeBtn.style.width = '265px';
