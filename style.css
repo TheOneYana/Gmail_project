@@ -296,6 +296,7 @@ div.more-apps {
     flex-direction: row;
     justify-content: space-around;
     padding-top: 50px;  
+    height: 100vh;
 }
 
 #sidebar-left {
@@ -303,22 +304,21 @@ div.more-apps {
     max-width: 265px;
     padding-top: 15px;
     overflow: hidden;
-    height: 200px;
+    height: 270px;
     border-bottom: 1px solid whitesmoke;
-    /* position: relative; */
+    position: relative;
 }
 
 .left-menu {
-    /* max-width: 275px; */
     transition: all 0.2s ease;
-    height: 94.4vh;
+    height: 100vh;
     background-color: white;
 }
 #sidebar-left{
     border-top: 1px solid whitesmoke;
 }
 #sidebar-left:hover {
-    overflow: auto;
+    overflow-y: auto;
 }
 #compose {
     border-bottom: 1px solid whitesmoke;
@@ -371,7 +371,7 @@ div.more-apps {
     display: flex;
     align-items: center;
     height: 40px;
-    width: 220px;
+    width: 200px;
     padding: 0 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -406,13 +406,13 @@ div.more-apps {
     display: none;
     position: absolute;
     text-align: center;
-    left: 75%;
+    left: 70%;
     top: -30%;
     width: 75px;
     background-color: gray;
     color: white;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 3px 0px;
     border-radius: 7px;
 }
@@ -420,13 +420,13 @@ div.more-apps {
     display: none;
     position: absolute;
     text-align: center;
-    left: 50%;
+    left: 45%;
     top: -30%;
     width: 130px;
     background-color: gray;
     color: white;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 3px 0px;
     border-radius: 7px;
 }
@@ -438,7 +438,7 @@ div.more-apps {
 }
 ::-webkit-scrollbar {
     width: 10px;
-}
+} 
 ::-webkit-scrollbar-thumb {
     background: rgb(188, 185, 185); 
     box-shadow: inset 0 0 5px grey; 
@@ -466,22 +466,20 @@ border-radius: 10px;
     padding-left: 45px;
 }
 
-#leftSideFooter {
-    /* position: sticky;
+div#leftSideFooter {
+    margin-top: 110px;
     height: 40px;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    position: relative;
-    position: absolute;
+    width: 240px;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     color: white;
     text-align: center;
-    border-top: 1px solid whitesmoke; */
-    
-    
-}
-.footer-button {
+    border-top: 1px solid whitesmoke;
+}  
+
+
+.footer-button-account, .footer-button-chat, .footer-button  {
     background-color: white;
     border: none;
 } 
@@ -540,6 +538,7 @@ main {
     align-items:initial;
     width: 100%;
     background-color: rgb(128, 128, 128, 0.5);
+    padding: 0;
 
 }
 .pagenation{
@@ -551,7 +550,7 @@ main {
     font-size: 13px;
     padding-right: 15px;
     position: sticky;
-   top: 0;
+    top: 0;
     
     
     width: 100%;
@@ -794,7 +793,7 @@ fill:#fff;
 
 .centerpiece{
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100vh;
    
 }
@@ -805,8 +804,9 @@ footer{
    text-align: center;
    padding-top: 12px;
    font-size: 13px;
+   bottom: 0;
+   margin-bottom: 0;
    
-  
 }
 footer a{
     text-decoration: none;
@@ -1062,8 +1062,6 @@ input[type="checkbox"] {
     color: rgb(108, 108, 108);
     font-size: 13px;
     width: 100%;
-    
-   
     background-color: white;
     
   
