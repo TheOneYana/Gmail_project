@@ -148,33 +148,33 @@ search.addEventListener('input', function (event) {
     document.querySelector('.totalSpam').innerHTML = newSpam.length;
 }
 
-// const primarySection = document.querySelector('.primary');
+const primarySection = document.querySelector('.primary');
 
-// primarySection.addEventListener('click', function(){
-//     pageNumber = 0;
-//     emails = primary;
-//     console.log(emails);
-//     create_emails();
+primarySection.addEventListener('click', function(){
+    pageNumber = 0;
+    emails = primary;
+    console.log(emails);
+    create_emails();
     
-// }); 
+}); 
 
-// const socialSection = document.querySelector('.socialEmailsTop');
+const socialSection = document.querySelector('.socialEmailsTop');
 
-// socialSection.addEventListener('click', function(){
-// pageNumber = 0;
-// emails = social;
-// console.log(emails);
-// create_emails();
-// });
+socialSection.addEventListener('click', function(){
+pageNumber = 0;
+emails = social;
+console.log(emails);
+create_emails();
+});
 
-// const promotionsSection = document.querySelector('.promotionsEmailsTop');
+const promotionsSection = document.querySelector('.promotionsEmailsTop');
 
-// promotionsSection.addEventListener('click', function(){
-// pageNumber = 0;
-// emails = promotions;
-// console.log(emails);
-// create_emails();
-// });
+promotionsSection.addEventListener('click', function(){
+pageNumber = 0;
+emails = promotions;
+console.log(emails);
+create_emails();
+});
 
 
 const icons = document.querySelectorAll('[id = sidebarIcons]');
