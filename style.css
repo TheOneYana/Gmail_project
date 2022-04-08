@@ -134,7 +134,7 @@ a#support, a {
 
 }
 
-ul.suppor-links li, ul.apps li, li.support-li {
+ul.suppor-links li, ul.apps li {
     list-style-type: none;
     padding-left: 5px;
 }
@@ -287,14 +287,6 @@ a#more-apps {
 
 div.more-apps {
     margin-bottom: 10px;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-p.compose-p, #displayedMp, #displayedMp {
-visibility: visible;
 }
 /* Asel's CSS ends */
 
