@@ -882,13 +882,7 @@ footer a{
     height: 100vh;
 }
 
-.right-side-menu {
-    background-color: rgb(60, 63, 110);
-    width: 60px;
-    height: 100vh;
 
-  
-}
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -1032,7 +1026,7 @@ input[type="checkbox"] {
 
  .right-side-menu {
     background-color: white;
-    height: 94.5vh;
+    height: 100vh;
     width: 100px;
     display: table-cell;
     vertical-align: middle;

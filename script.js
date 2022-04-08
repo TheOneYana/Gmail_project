@@ -267,17 +267,17 @@ sideLeft.addEventListener('mouseover', () => {
         }
 })
 
-sideLeft.addEventListener('mouseout', () => {
-    if (sideLeft.style.width === "265px"){
-        sideLeft.style.width = '73px';
-        smallCompose.style.display = "block";
-        bigCompose.style.display = "none";
-        displayedHp.style.display = "none";
-        displayedMp.style.display = "none";
-        footerDisp.style.display = "block";
-        footerDiv.style.display = "none";
-    }
-})
+// sideLeft.addEventListener('mouseout', () => {
+//     if (sideLeft.style.width === "265px"){
+//         sideLeft.style.width = '73px';
+//         smallCompose.style.display = "block";
+//         bigCompose.style.display = "none";
+//         displayedHp.style.display = "none";
+//         displayedMp.style.display = "none";
+//         footerDisp.style.display = "block";
+//         footerDiv.style.display = "none";
+//     }
+// })
 
 // Menu button click
     const footerDisp = document.querySelector(".footer-button");
