@@ -1,4 +1,4 @@
-export const promotions = [
+export const promotions1 = [
   {
     tags: { isStarred: false, isTrash: false, isSpam: false },
     senderName: 'Seytech Co',
@@ -1054,3 +1054,9 @@ export const promotions = [
     ],
   },
 ];
+export const promotions = promotions1.map((email, index) => {
+  return{
+    id: index + 1,
+    ...email,
+  };
+});

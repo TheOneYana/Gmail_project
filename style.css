@@ -788,6 +788,7 @@ fill:#fff;
 }
 .p_s_p_text {
     margin-left: 15px;
+    cursor: pointer;
     
 }
 .p_s_p_icons {
@@ -976,6 +977,7 @@ input[type="checkbox"] {
     white-space: nowrap;
     overflow-x: hidden;
     margin-left: 10px;
+    cursor: pointer;
 
 }
 .emailContent{
@@ -990,7 +992,7 @@ input[type="checkbox"] {
     margin-left: 40px;
     font-size: 13px;
     margin-right: 12px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     justify-content: end;
   
@@ -1560,11 +1562,12 @@ hr{
     margin-right: 10px;
 }
 .emailText{
+    padding-top: 20px;
     width: 76.7vw;
     width: 90%;
     width: calc(100% - 100px);
     margin-left: 76px;
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 35px;
 }
 .toMe{
